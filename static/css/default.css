@@ -1,0 +1,144 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "宋体", arial, helvetica, sans-serif;
+	font-size: 14px;
+	background-color: #FFF;
+	color: #000;
+}
+.pull-left{
+	float:left;
+}
+.pull-right{
+	float: right;
+}
+.clearfix{
+	clear: both;
+}
+/* 导航栏整体 */
+nav{
+	width: 100%;
+	height: 50px;
+	background-color: #326ca4;
+}
+nav .menu-primary-container{
+	margin: auto;
+	width: 1150px;
+}
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	margin: 0;
+	padding: 0;
+}
+nav ul a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+	font-family: "黑体", arial, helvetica, sans-serif;
+}
+/* 一级菜单 */
+ul.primary-menu{
+	height: 50px;
+}
+ul.primary-menu>li{
+	float: left;
+	padding: 0 20px;
+	height: 50px;
+	transition: background-color 0.4s;
+	-moz-transition: background-color 0.4s;
+	-ms-transition: background-color 0.4s;
+	position: relative;
+}
+ul.primary-menu>li>a{
+	font-size: 1.3em;
+	line-height: 50px;
+}
+ul.primary-menu>li:hover{
+	background-color: #003365;
+}
+/* 二级菜单 */
+ul.sub-menu{
+	display: none;
+	background-color: #003365;
+	position: absolute;
+	left: 0;
+	top: 50px;
+}
+ul.sub-menu>li{
+	width: 113px;
+	height: 40px;
+}
+ul.sub-menu>li:hover{
+	background-color: #032546;
+}
+ul.sub-menu>li>a{
+	font-size: 1.2em;
+	line-height: 40px;
+}
+/* 页脚  */
+footer{
+	width: 100%;
+}
+.foot-widget{
+	/*border-top: 5px solid #0073AA;*/
+	background-color: #d7d7d7;
+}
+/* 每个页脚控件 */
+.foot-box{
+	margin: 50px 0 50px 80px;
+	width: 22%;
+}
+.foot-box-title{
+	display: block;
+	font-family: "黑体", arial, helvetica, sans-serif;
+	font-size: 1.4em;
+	color: #003264;
+	margin: 0 0 10px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid #A0A5AA;
+}
+.foot-box>ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.foot-box>ul>li{
+	color: #003264;
+	line-height: 2em;
+}
+.foot-box>ul a{
+	color: #003264;
+	text-decoration: none;
+	transition: color 0.2s, text-decoration 0.2s;
+	-moz-transition: color 0.2s, text-decoration 0.2s;
+	-ms-transition: color 0.2s, text-decoration 0.2s;
+}
+.foot-box>ul a:hover{
+	color: #001a33;
+	text-decoration: underline;
+}
+/* 页脚版权声明 */
+.foot-copy{
+	color: #FFF;
+	background-color: #003365;
+	font-size: 0.8em;
+	text-align: center;
+	padding: 12px 0;
+}
+.foot-copy a{
+	text-decoration: none;
+	color: #F0F0F0;
+}
+.foot-copy a:hover{
+	text-decoration: underline;
+	color: #AAAAAA;
+}
+/* 首页 */
+.content-area{
+	
+}

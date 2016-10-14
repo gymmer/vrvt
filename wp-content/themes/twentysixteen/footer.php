@@ -1,0 +1,97 @@
+<?php
+/**
+ * The template for displaying the footer
+ *
+ * Contains the closing of the #content div and all content after
+ *
+ * @package WordPress
+ * @subpackage Twenty_Sixteen
+ * @since Twenty Sixteen 1.0
+ */
+?>
+
+	</div><!-- .site-content -->
+
+	<footer>
+		<div class="foot-widget">
+			<div class="foot-box pull-left">
+				<p class="foot-box-title">网络资源</p>
+				<ul>
+					<li>
+						<i class="fa fa-laptop fa-fw"></i>&nbsp;
+						<a href="#">网络VR资源</a>
+					</li>
+					<li>
+						<i class="fa fa-flag fa-fw"></i>&nbsp;
+						<a href="#">网络VR资源</a>
+					</li>
+					<li>
+						<i class="fa fa-desktop fa-fw"></i>&nbsp;
+						<a href="#">网络VR资源</a>
+					</li>
+					<li>
+						<i class="fa fa-key fa-fw"></i>&nbsp;
+						<a href="#">网络VR资源</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="foot-box pull-left">
+				<p class="foot-box-title">友情链接</p>
+				<ul>
+					<li>
+						<i class="fa fa-star fa-fw"></i>&nbsp;
+						<a href="http://www.bnu.edu.cn/">北京师范大学</a>
+					</li>
+					<li>
+						<i class="fa fa-support fa-fw"></i>&nbsp;
+						<a href="http://cist.bnu.edu.cn/">信息科学与技术学院</a>
+					</li>
+					<li>
+						<i class="fa fa-share-alt fa-fw"></i>&nbsp;
+						<a href="http://www.most.gov.cn/">国家科技部</a>
+					</li>
+					<li>
+						<i class="fa fa-link fa-fw"></i>&nbsp;
+						<a href="http://www.moe.edu.cn/">国家教育部</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="foot-box pull-left">
+				<p class="foot-box-title">联系我们</p>
+				<ul>
+					<li>
+						<i class="fa fa-home fa-fw"></i>&nbsp; 
+						北京市海淀区新外大街19号 科技楼 B区11楼
+					</li>
+					<li>
+						<i class="fa fa-map-marker fa-fw"></i>&nbsp; 
+						100875
+					</li>
+					<li>
+						<i class="fa fa-phone fa-fw"></i>&nbsp; 
+						(010)58803055
+					</li>
+					<li>
+						<i class="fa fa-envelope fa-fw"></i>&nbsp; 
+						<a href="mailto:wangxs@bnu.edu.cn">wangxs@bnu.edu.cn</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="clearfix"></div>
+			
+		</div> <!-- .foot-widget end -->
+		
+		<div class="foot-copy">
+			Copyright &copy; 2016. 
+			<a href="/">Institute of Virtual Reality and Visualization Technology.</a> 
+			All Rights Reserved.
+		</div> <!-- .foot-copy end -->
+	</footer>
+
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/static/js/default.js"></script>
+</body>
+</html>
