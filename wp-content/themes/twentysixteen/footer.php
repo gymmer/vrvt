@@ -13,7 +13,7 @@
 	</div><!-- .site-content -->
 
 	<footer>
-		<div class="foot-widget">
+		<div class="container">
 			<div class="foot-box">
 				<p class="foot-box-title">网络资源</p>
 				<ul>
@@ -82,11 +82,13 @@
 			
 			<div class="clearfix"></div>
 			
-		</div> <!-- .foot-widget end -->
+		</div> <!-- .container of footer end -->
 			
 		<div class="foot-copy">
-			Copyright &copy; 2016. 
-			<a href="/">Institute of Virtual Reality and Visualization Technology.</a> 
+			<a href="http://www.bnu.edu.cn">北京师范大学</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="/">虚拟现实与可视化技术研究所</a><br>
+			<a href="/english">Institute of Virtual Reality and Visualization Technology.</a> 
+			<br>Copyright &copy; 2016. 
 			All Rights Reserved.
 		</div> <!-- .foot-copy end -->
 	</footer>
@@ -94,5 +96,7 @@
 
 	<script src="/static/js/jquery-1.12.4.min.js"></script>
 	<script src="/static/js/base.js"></script>
+
+	<?php wp_footer(); ?>
 </body>
 </html>

@@ -75,7 +75,7 @@ jQuery(function($) {
             $('#prev').animate({ left: 50 }, 'fast');
         }
         if (!$('#next').is(':animated')) {
-            $('#next').animate({ left: 1000 }, 'fast');
+            $('#next').animate({ right: 50 }, 'fast');
         }
     }, function() {
         timer = setInterval(slideToNext, 3000);
@@ -83,7 +83,7 @@ jQuery(function($) {
             $('#prev').animate({ left: -50 }, 'fast');
         }
         if (!$('#next').is(':animated')) {
-            $('#next').animate({ left: 1100 }, 'fast');
+            $('#next').animate({ right: -50 }, 'fast');
         }
     });
 })

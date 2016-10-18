@@ -16,7 +16,7 @@
 
 get_header(); ?>
 
-	<div class="content-container">
+	<div class="container">
         <div id="slider">
             <ul id="slider-img">
                 <li>

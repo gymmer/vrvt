@@ -8,6 +8,12 @@ body
     background-color: #f5f5f5;
 }
 
+.container,
+.menu-primary-container
+{
+    width: 1200px;
+    margin: auto;
+}
 
 /* 字体图标右侧，添加一个字距的空白*/
 
@@ -44,9 +50,8 @@ i.fa
 
 header
 {
-    width: 1100px;
-    margin: 0 auto;
-    padding: 40px 0 10px 0;
+    height: 60px;
+    padding: 20px 0 10px 0;
 }
 
 
@@ -67,8 +72,6 @@ header img
 .head-title
 {
     float: left;
-
-    height: 80px;
 
     text-align: center;
 
@@ -100,7 +103,7 @@ header img
 {
     position: relative;
 
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 #search input[name='search']
@@ -130,6 +133,37 @@ header img
 }
 
 
+/* 功能区 */
+
+.head-right a
+{
+    padding: 0 4px;
+
+    border-right: 1px solid #004da1;
+}
+
+.head-right a:first-child
+{
+    padding-left: 0;
+
+    border-left: none;
+}
+
+.head-right a:last-child
+{
+    padding-right: 0;
+
+    border-right: none;
+}
+
+.head-right a:hover
+{
+    text-decoration: none;
+
+    color: #00234a;
+}
+
+
 /**
  * 导航栏
  */
@@ -140,12 +174,6 @@ nav
     height: 50px;
 
     background-color: #004da1;
-}
-
-nav .menu-primary-container
-{
-    width: 1000px;
-    margin: auto;
 }
 
 nav ul a
@@ -179,7 +207,7 @@ ul.primary-menu > li
     float: left;
 
     height: 50px;
-    padding: 0 20px;
+    padding: 0 30px;
 
     -webkit-transition: background-color .4s;
        -moz-transition: background-color .4s;
@@ -216,7 +244,7 @@ ul.sub-menu
 
 ul.sub-menu > li
 {
-    width: 113px;
+    width: 133px;
     height: 40px;
 }
 
@@ -243,13 +271,6 @@ footer
     background-color: #e5e4e4;
 }
 
-.foot-widget
-{
-    width: 1100px;
-    margin: 0 auto;
-}
-
-
 /* 每个页脚控件 */
 
 .foot-box
@@ -258,16 +279,6 @@ footer
 
     width: 30%;
     padding: 50px 20px;
-}
-
-.foot-box:first-child
-{
-    padding-left: 0;
-}
-
-.foot-box:last-child
-{
-    padding-right: 0;
 }
 
 .foot-box-title
@@ -316,13 +327,14 @@ footer
 .foot-copy
 {
     font-size: .9em;
+    line-height: 2em;
 
     padding: 12px 0;
 
     text-align: center;
 
     color: #fff;
-    background-color: #004da1;
+    background-image: url(../img/footer_bg.jpg);
 }
 
 .foot-copy a
@@ -332,6 +344,8 @@ footer
 
 .foot-copy a:hover
 {
+    text-decoration: none;
+
     color: #aaa;
 }
 

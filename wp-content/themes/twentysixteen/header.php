@@ -27,11 +27,11 @@
         <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
         <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+
 </head>
 
 <body>
-	<header>
+	<header class="container">
 		<div class="head-left">
 			<a href="/">
 				<img src="/static/img/head-logo.png" alt="虚拟现实与可视化技术研究所" title="虚拟现实与可视化技术研究所">
@@ -46,7 +46,10 @@
 	            <input type="text" name="search" value="检索...">
 	            <div id="submit-search"><i class="fa fa-search fa-fw"></i></div>
 	        </form>
-	        <a href="/english">English Version</a>
+	        <a href="/admin">登录</a>
+	        <a href="http://vrvt.bnu.edu.cn/" target="_blank">旧版</a>
+	        <a href="/">中文</a>
+	        <a href="/english">English</a>
 		</div>
         <div class="clearfix"></div>
 	</header>
@@ -59,4 +62,4 @@
 		?>
 	</nav>
 
-	<div id="content" class="site-content">
+	<div id="content">
