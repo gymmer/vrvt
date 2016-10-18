@@ -15,6 +15,7 @@ body
     margin: auto;
 }
 
+
 /* 字体图标右侧，添加一个字距的空白*/
 
 i.fa
@@ -137,16 +138,12 @@ header img
 
 .head-right a
 {
-    padding: 0 4px;
+    font-size: .9em;
+
+    margin: 0;
+    padding: 0 8px 0 4px;
 
     border-right: 1px solid #004da1;
-}
-
-.head-right a:first-child
-{
-    padding-left: 0;
-
-    border-left: none;
 }
 
 .head-right a:last-child
@@ -271,6 +268,7 @@ footer
     background-color: #e5e4e4;
 }
 
+
 /* 每个页脚控件 */
 
 .foot-box
@@ -288,7 +286,7 @@ footer
 
     display: block;
 
-    margin: 0 0 10px 0;
+    margin: 0 50px 10px 0;
     padding: 0 0 10px 0;
 
     color: #004da1;
@@ -297,7 +295,7 @@ footer
 
 .foot-box > ul > li
 {
-    font-family: '微软雅黑', 'Microsoft yahei', Helvetica, Arial, sans-serif;
+    font-family: '微软雅黑', 'Microsoft yahei', '黑体', Helvetica, Arial, sans-serif;
     line-height: 2em;
 
     color: #004da1;
