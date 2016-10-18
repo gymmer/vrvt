@@ -1,4 +1,5 @@
-$(function() {
+jQuery.noConflict();
+jQuery(function($) {
     // 定义一些常用的变量
     var sliderImg = $('#slider-img');
     var sliderDots = $('#slider-dots').empty();

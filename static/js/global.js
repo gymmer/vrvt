@@ -50,7 +50,8 @@ function goToTop() {
 }
 addLoadEvent(goToTop);
 
-(function($) {
+jQuery.noConflict();
+jQuery(function($) {
 
     // 头部搜索的提交事件
     var searchInput = $('#search input[type="text"]');
@@ -119,4 +120,4 @@ addLoadEvent(goToTop);
                     .css('font-weight', 'normal');
             }
         })
-})(jQuery)
+})
