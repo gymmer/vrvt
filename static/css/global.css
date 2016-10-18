@@ -1,0 +1,362 @@
+/**
+ * CSS全局，包括头部header、导航栏nav、页脚footer、返回顶部go-to-top
+ */
+
+body
+{
+    color: #000;
+    background-color: #f5f5f5;
+}
+
+
+/* 字体图标右侧，添加一个字距的空白*/
+
+i.fa
+{
+    margin-right: 1em;
+}
+
+
+/* 清除浮动 */
+
+.clearfix:after
+{
+    font-size: 0;
+
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: ' ';
+}
+
+.clearfix
+{
+    zoom: 1;
+}
+
+
+/**
+ * 头部
+ */
+
+header
+{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0 10px 0;
+}
+
+
+/* LOGO 与 文字 */
+
+header img
+{
+    float: left;
+
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    padding-right: 20px;
+
+    border-right: 2px solid #004da1;
+}
+
+.head-title
+{
+    float: left;
+
+    height: 80px;
+
+    text-align: center;
+
+    color: #004da1;
+}
+
+.head-title > .cn
+{
+    font-family: '华文新魏', Helvetica, Arial, sans-serif;
+    font-size: 2.2em;
+}
+
+.head-title > .en
+{
+    font-size: 1.1em;
+}
+
+
+/* 搜索框 */
+
+.head-right
+{
+    float: right;
+
+    text-align: center;
+}
+
+#search
+{
+    position: relative;
+
+    margin-bottom: 15px;
+}
+
+#search input[name='search']
+{
+    height: 25px;
+}
+
+.input-blur
+{
+    color: #a0a0a0;
+    background-color: #fff;
+}
+
+.input-focus
+{
+    color: #000;
+    background-color: #e7f4ff;
+}
+
+#submit-search
+{
+    position: absolute;
+    top: 5px;
+    right: 0;
+
+    cursor: pointer;
+}
+
+
+/**
+ * 导航栏
+ */
+
+nav
+{
+    width: 100%;
+    height: 50px;
+
+    background-color: #004da1;
+}
+
+nav .menu-primary-container
+{
+    width: 1000px;
+    margin: auto;
+}
+
+nav ul a
+{
+    font-family: '黑体', Helvetica, Arial, sans-serif;
+
+    display: block;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+nav ul a:hover
+{
+    text-decoration: none;
+}
+
+
+/* 一级菜单 */
+
+ul.primary-menu
+{
+    height: 50px;
+}
+
+ul.primary-menu > li
+{
+    position: relative;
+
+    float: left;
+
+    height: 50px;
+    padding: 0 20px;
+
+    -webkit-transition: background-color .4s;
+       -moz-transition: background-color .4s;
+        -ms-transition: background-color .4s;
+         -o-transition: background-color .4s;
+            transition: background-color .4s;
+}
+
+ul.primary-menu > li > a
+{
+    font-size: 1.3em;
+    line-height: 50px;
+}
+
+ul.primary-menu > li:hover
+{
+    background-color: #022f61;
+}
+
+
+/* 二级菜单 */
+
+ul.sub-menu
+{
+    position: absolute;
+    z-index: 999;
+    top: 50px;
+    left: 0;
+
+    display: none;
+
+    background-color: #003365;
+}
+
+ul.sub-menu > li
+{
+    width: 113px;
+    height: 40px;
+}
+
+ul.sub-menu > li:hover
+{
+    background-color: #00234a;
+}
+
+ul.sub-menu > li > a
+{
+    font-size: 1.2em;
+    line-height: 40px;
+}
+
+
+/**
+ * 页脚
+ */
+
+footer
+{
+    width: 100%;
+
+    background-color: #e5e4e4;
+}
+
+.foot-widget
+{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* 每个页脚控件 */
+
+.foot-box
+{
+    float: left;
+
+    width: 30%;
+    padding: 50px 20px;
+}
+
+.foot-box:first-child
+{
+    padding-left: 0;
+}
+
+.foot-box:last-child
+{
+    padding-right: 0;
+}
+
+.foot-box-title
+{
+    font-family: '黑体', Helvetica, Arial, sans-serif;
+    font-size: 1.4em;
+
+    display: block;
+
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+
+    color: #004da1;
+    border-bottom: 1px solid #a0a5aa;
+}
+
+.foot-box > ul > li
+{
+    font-family: '微软雅黑', 'Microsoft yahei', Helvetica, Arial, sans-serif;
+    line-height: 2em;
+
+    color: #004da1;
+}
+
+.foot-box > ul a
+{
+    -webkit-transition: color .2s, text-decoration .2s;
+       -moz-transition: color .2s, text-decoration .2s;
+        -ms-transition: color .2s, text-decoration .2s;
+         -o-transition: color .2s, text-decoration .2s;
+            transition: color .2s, text-decoration .2s;
+
+    color: #004da1;
+}
+
+.foot-box > ul a:hover
+{
+    text-decoration: underline;
+
+    color: #022f61;
+}
+
+
+/* 页脚版权声明 */
+
+.foot-copy
+{
+    font-size: .9em;
+
+    padding: 12px 0;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #004da1;
+}
+
+.foot-copy a
+{
+    color: #f0f0f0;
+}
+
+.foot-copy a:hover
+{
+    color: #aaa;
+}
+
+
+/**
+ * 返回顶部
+ */
+
+#go-to-top
+{
+    position: fixed;
+    right: 25px;
+    bottom: 60px;
+
+    display: none;
+
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+
+    background-image: url(../img/up.png);
+}
+
+#go-to-top:hover
+{
+    background-image: url(../img/up_hover.png);
+}

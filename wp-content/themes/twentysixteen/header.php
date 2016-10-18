@@ -19,8 +19,9 @@
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>虚拟现实与可视化技术研究所</title>
+	<link rel="shortcut icon" href="/static/img/favicon.ico">
 	<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="/static/css/default.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/base.css">
 
 	 <!--[if lt IE 9]>
         <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
@@ -30,18 +31,22 @@
 
 <body>
 	<header>
-		<a href="/">
-			<img src="/static/img/BNU-logo.png" alt="虚拟现实与可视化技术研究所" title="虚拟现实与可视化技术研究所">
-		</a>
-		<div class="head-title">
-			<span class="cn">虚拟现实与可视化技术研究所</span><br>
-			<span class="en">Institute of Virtual Reality and Visualization Technology</span>
+		<div class="head-left">
+			<a href="/">
+				<img src="/static/img/BNU-logo.png" alt="虚拟现实与可视化技术研究所" title="虚拟现实与可视化技术研究所">
+			</a>
+			<div class="head-title">
+				<span class="cn">虚拟现实与可视化技术研究所</span><br>
+				<span class="en">Institute of Virtual Reality and Visualization Technology</span>
+			</div>
 		</div>
-		<form method="post" action="#0" id="search">
-            <input type="text" name="search" value="检索...">
-            <span id="submit-search"><i class="fa fa-search fa-fw"></i></span>
-        </form>
-        <a class="head-en-version" href="/english">English Version</a>
+		<div class="head-right">
+			<form method="post" action="#0" id="search">
+	            <input type="text" name="search" value="检索...">
+	            <div id="submit-search"><i class="fa fa-search fa-fw"></i></div>
+	        </form>
+	        <a href="/english">English Version</a>
+		</div>
         <div class="clearfix"></div>
 	</header>
 	<nav>
