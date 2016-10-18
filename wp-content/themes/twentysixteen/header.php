@@ -20,7 +20,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>虚拟现实与可视化技术研究所</title>
 	<link rel="shortcut icon" href="/static/img/favicon.ico">
-	<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css" >
 	<link rel="stylesheet" type="text/css" href="/static/css/base.css">
 
 	 <!--[if lt IE 9]>
@@ -33,7 +33,7 @@
 	<header>
 		<div class="head-left">
 			<a href="/">
-				<img src="/static/img/BNU-logo.png" alt="虚拟现实与可视化技术研究所" title="虚拟现实与可视化技术研究所">
+				<img src="/static/img/head-logo.png" alt="虚拟现实与可视化技术研究所" title="虚拟现实与可视化技术研究所">
 			</a>
 			<div class="head-title">
 				<span class="cn">虚拟现实与可视化技术研究所</span><br>

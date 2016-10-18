@@ -91,7 +91,7 @@
 		</div> <!-- .foot-copy end -->
 	</footer>
 	<span id="go-to-top"></span>
-	<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<script src="/static/js/jquery-1.12.4.min.js"></script>
 	<script src="/static/js/global.js"></script>
 	<script src="/static/js/customer.js"></script>
 </body>
