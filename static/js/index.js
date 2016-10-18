@@ -86,4 +86,9 @@ jQuery(function($) {
             $('#next').animate({ right: -50 }, 'fast');
         }
     });
+
+    /* tab 鼠标悬停时切换。默认选中第一个tab*/
+    $('#tab-title-container a').mouseenter(function() {
+        $(this).addClass('hover').siblings().removeClass('hover');
+    }).eq(0).mouseenter();
 })

@@ -42,6 +42,15 @@ get_header(); ?>
             <div id="slider-dots"></div>
             <div id="slider-intro"><span></span></div>
         </div><!-- .slider end-->
-	</div><!-- .content-container end-->
+
+        <div id="index-tab">
+            <div id="tab-title-container">
+                <a href="/dynamic/news/"><i class="fa fa-newspaper-o"></i>新闻动态</a>
+                <a href="/dynamic/notation/"><i class="fa fa-edit"></i>通知公告</a>
+                <a href="/activity/conference/"><i class="fa fa-calendar-minus-o"></i></i>学术会议</a>  
+            </div>
+            
+        </div>
+    </div><!-- .container end-->
 
 <?php get_footer(); ?>
