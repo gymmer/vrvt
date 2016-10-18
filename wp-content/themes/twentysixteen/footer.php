@@ -14,7 +14,7 @@
 
 	<footer>
 		<div class="foot-widget">
-			<div class="foot-box pull-left">
+			<div class="foot-box">
 				<p class="foot-box-title">网络资源</p>
 				<ul>
 					<li>
@@ -36,7 +36,7 @@
 				</ul>
 			</div>
 			
-			<div class="foot-box pull-left">
+			<div class="foot-box">
 				<p class="foot-box-title">友情链接</p>
 				<ul>
 					<li>
@@ -58,23 +58,23 @@
 				</ul>
 			</div>
 			
-			<div class="foot-box pull-left">
+			<div class="foot-box">
 				<p class="foot-box-title">联系我们</p>
 				<ul>
 					<li>
-						<i class="fa fa-home fa-fw"></i>&nbsp; 
+						<i class="fa fa-home fa-fw"></i>
 						北京市海淀区新外大街19号 科技楼 B区11楼
 					</li>
 					<li>
-						<i class="fa fa-map-marker fa-fw"></i>&nbsp; 
+						<i class="fa fa-map-marker fa-fw"></i>
 						100875
 					</li>
 					<li>
-						<i class="fa fa-phone fa-fw"></i>&nbsp; 
-						(010)58803055
+						<i class="fa fa-phone fa-fw"></i>
+						010 - 58803055
 					</li>
 					<li>
-						<i class="fa fa-envelope fa-fw"></i>&nbsp; 
+						<i class="fa fa-envelope fa-fw"></i>
 						<a href="mailto:wangxs@bnu.edu.cn">wangxs@bnu.edu.cn</a>
 					</li>
 				</ul>
@@ -83,7 +83,7 @@
 			<div class="clearfix"></div>
 			
 		</div> <!-- .foot-widget end -->
-		
+			
 		<div class="foot-copy">
 			Copyright &copy; 2016. 
 			<a href="/">Institute of Virtual Reality and Visualization Technology.</a> 
@@ -91,7 +91,7 @@
 		</div> <!-- .foot-copy end -->
 	</footer>
 
-	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 	<script src="/static/js/default.js"></script>
 </body>
 </html>
