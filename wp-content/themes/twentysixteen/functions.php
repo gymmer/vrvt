@@ -419,3 +419,30 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
+
+/*控制摘要字数*/
+function new_excerpt_length($length) {
+	return 36;
+}
+add_filter("excerpt_length", "new_excerpt_length");
+
+/*控制摘要结尾*/
+function new_excerpt_more($more) {
+	global $post;
+	return ' <a href="'. get_permalink($post->ID) . '">...</a>';
+}
+add_filter("excerpt_more", "new_excerpt_more");
+
+/* 自动获取文章第一张图片 */
+function catch_first_image() {
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+	$first_img = $matches [1] [0];
+	if(empty($first_img)){ //Defines a default image
+		$first_img = "/static/img/default-tab.jpg";
+	}
+	return $first_img;
+}

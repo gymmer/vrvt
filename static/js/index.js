@@ -88,7 +88,18 @@ jQuery(function($) {
     });
 
     /* tab 鼠标悬停时切换。默认选中第一个tab*/
-    $('#tab-title-container a').mouseenter(function() {
+    var tabTitles =  $('#tab-title-container a');
+    var tabs = $('.tab');
+    tabTitles.mouseenter(function(event) {
+        // 切换标题样式
         $(this).addClass('hover').siblings().removeClass('hover');
+        // 切换显示的tab
+        var currenTabIndex = tabs.index(tabs.filter(':not(:hidden)'));
+        var targetTabIndex = tabTitles.index($(this));
+        if(currenTabIndex != targetTabIndex){
+            tabs.hide().eq(targetTabIndex).fadeIn('fast');
+        }
+        // 切换更多内容的链接
+        $('#tab-more').attr('href', $(this).attr('href'));
     }).eq(0).mouseenter();
 })
