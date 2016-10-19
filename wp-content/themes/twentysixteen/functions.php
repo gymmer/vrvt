@@ -441,8 +441,9 @@ function catch_first_image() {
 	ob_end_clean();
 	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
 	$first_img = $matches [1] [0];
-	if(empty($first_img)){ //Defines a default image
-		$first_img = "/static/img/default-tab.jpg";
+	if(empty($first_img)){ //Defines a default image randomly
+		$seed = rand(1,10);
+		$first_img = "/static/img/default-tab-".strval($seed).".jpg";
 	}
 	return $first_img;
 }
