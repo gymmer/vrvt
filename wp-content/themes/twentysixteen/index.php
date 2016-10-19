@@ -19,21 +19,21 @@ get_header(); ?>
 	<div class="container">
         <div id="slider">
             <ul id="slider-img">
-                <li>
-                    <a href="#0"><img src="/uploads/img/slide-1.jpg" alt="教育学部2015级本科第一团支部井冈山社会实践圆满结束"></a>
-                </li>
-                <li>
-                    <a href="#0"><img src="/uploads/img/slide-2.jpg" alt="心理学院2016年学术型研究生奖学金实施方案"></a>
-                </li>
-                <li>
-                    <a href="#0"><img src="/uploads/img/slide-3.jpg" alt="心理学院2016年本科生国家奖学金推荐获奖人员公示"></a>
-                </li>
-                <li>
-                    <a href="#0"><img src="/uploads/img/slide-4.jpg" alt="关于开展京籍残疾在校大学生“凌盛阳光天使奖学金”评选活动的通知"></a>
-                </li>
-                <li>
-                    <a href="#0"><img src="/uploads/img/slide-5.jpg" alt="关于“自我的力量-自性、智慧咨商模式”工作坊培训通知"></a>
-                </li>
+
+                <?php $maxSlideImgNum = 10; $cats = get_categories(); ?>
+                <?php foreach ( $cats as $cat ) { ?>
+                    <?php query_posts( 'showposts='.strval($maxSlideImgNum).'&cat='.$cat->cat_ID );?>
+                    <?php while ( have_posts() ) { the_post(); ?>
+                        <?php if ( has_post_thumbnail() ) { ?>
+                            <li>
+                                <a href="<?php the_permalink(); ?>" rel="<?php the_title(); ?>" >
+                                    <?php the_post_thumbnail(); ?>
+                                </a>
+                            </li>
+                        <?php } ?>
+                    <?php } wp_reset_query(); ?>
+                <?php } ?>
+                
             </ul>
             <div id="slider-btn">
                 <div id="prev" class="slider-btn-box"><span>‹</span></div>
@@ -51,8 +51,8 @@ get_header(); ?>
             </div>
 
             <?php function showPostInTab($cat_ID){
-                $totalPostPerTab = 4;
-                query_posts( 'showposts='.strval($totalPostPerTab).'&cat='.strval($cat_ID));
+                $maxPostPerTab = 4;
+                query_posts( 'showposts='.strval($maxPostPerTab).'&cat='.strval($cat_ID));
                 while ( have_posts() ) 
                 { 
                     the_post();

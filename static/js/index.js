@@ -13,7 +13,7 @@ jQuery(function($) {
     }
     sliderDots.find('span:first-child').addClass('active'); // 第一个导航点处于活动状态
     // 初始化图片标题
-    sliderIntro.text(sliderImg.find('img:eq(0)').attr('alt'));
+    sliderIntro.text(sliderImg.find('a:eq(0)').attr('rel'));
 
     // 下一张图片
     function slideToNext() {
@@ -49,7 +49,7 @@ jQuery(function($) {
         sliderDots.find('span:eq(' + imgIndex + ')')
             .addClass('active')
             .siblings().removeClass('active');
-        var intro = sliderImg.find('img:eq(' + imgIndex + ')').attr('alt');
+        var intro = sliderImg.find('a:eq(' + imgIndex + ')').attr('rel');
         sliderIntro.fadeOut('fast', function() {
             $(this).text(intro)
         }).fadeIn('fast');
