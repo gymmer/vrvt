@@ -447,3 +447,17 @@ function catch_first_image() {
 	}
 	return $first_img;
 }
+
+/* TinyMCE Advanced 加中文字体 */
+function conference_change_mce_options($initArray) {
+//@see http://wiki.moxiecode.com/index.php/TinyMCE:Control_reference
+$initArray['theme_advanced_blockformats'] = 'p,address,pre,code,h3,h4,h5,h6';
+$initArray['theme_advanced_disable'] = 'forecolor';
+if ( isset($initArray['theme_advanced_fonts'])){
+    $initArray['theme_advanced_fonts'] = '宋体=宋体;黑体=黑体;仿宋=仿宋;楷体=楷体;隶书=隶书;幼圆=幼圆;'.$initArray['theme_advanced_fonts'];
+}else {
+    $initArray['theme_advanced_fonts'] = '宋体=宋体;黑体=黑体;仿宋=仿宋;楷体=楷体;隶书=隶书;幼圆=幼圆;Andale Mono=andale mono,times;Arial=arial,helvetica,sans-serif;Arial Black=arial black,avant garde;Book Antiqua=book antiqua,palatino;Comic Sans MS=comic sans ms,sans-serif;Courier New=courier new,courier;Georgia=georgia,palatino;Helvetica=helvetica;Impact=impact,chicago;Symbol=symbol;Tahoma=tahoma,arial,helvetica,sans-serif;Terminal=terminal,monaco;Times New Roman=times new roman,times;Trebuchet MS=trebuchet ms,geneva;Verdana=verdana,geneva;Webdings=webdings;Wingdings=wingdings,zapf dingbats';
+}
+   return $initArray;
+}
+add_filter('tiny_mce_before_init', 'conference_change_mce_options',999);

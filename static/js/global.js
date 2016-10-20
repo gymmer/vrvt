@@ -68,42 +68,24 @@ jQuery(function($) {
                     .css('font-weight', 'normal');
             }
         })
-
+    
     // 返回顶部
-    goToTop();
-})
-
-/*
-    弹性返回顶部
-    页面滚动条处于低端,点击回到顶部，并且隐藏掉
-*/
-function goToTop() {
-    var obj = document.getElementById("go-to-top");
-
+    // 弹性返回顶部，展现滚动的动画
+    $.fn.scrollTo = function(speed){
+        var targetOffset = $(this).offset().top;
+        $('html body').stop().animate({scrollTop:targetOffset}, speed);
+        return this;
+    }
+    var goToTop = $('#go-to-top');
+    goToTop.click(function(event) {
+        $('body').scrollTo(500);
+        return false;
+    });
+    // 自动隐藏放回顶部按钮
     function getScrollTop() {
         return document.documentElement.scrollTop + document.body.scrollTop;
     }
-
-    function setScrollTop(value) {
-        if (document.documentElement.scrollTop) {
-            document.documentElement.scrollTop = value;
-        } else {
-            document.body.scrollTop = value;
-        }
-    }
-
-    function handleWindowScroll() {
-        getScrollTop() > 0 ? obj.style.display = "block" : obj.style.display = "none";
-        console.log(obj.style.display)
-    }
-
-    window.onscroll = handleWindowScroll;
-    obj.onclick = function() {
-        var goTop = setInterval(scrollMove, 10);
-
-        function scrollMove() {
-            setScrollTop(getScrollTop() / 1.1);
-            if (getScrollTop() < 1) clearInterval(goTop);
-        }
-    }
-}
+    $(window).scroll(function(event) {
+        getScrollTop()>0 ? goToTop.fadeIn('fast') : goToTop.fadeOut('fast');
+    });
+})
