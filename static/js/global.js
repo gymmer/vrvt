@@ -3,13 +3,14 @@ jQuery(function($) {
 
     // 头部搜索的提交事件
     var searchInput = $('#search input[type="text"]');
-    $('#search').submit(function(event) {
-        alert('你已提交' + searchInput.val());
-    });
     $('#submit-search').click(function(event) {
         if (!searchInput.val() || searchInput.val() == searchInput[0].defaultValue) return;
         $('#search').submit();
     });
+    // 测试提交事件
+    // $('#search').submit(function(event) {
+    //     alert('你已提交' + searchInput.val());
+    // });
 
     // 头部搜索的输入框focus/blur
     var originBgColor = searchInput.css('background-color');

@@ -42,10 +42,13 @@
 			</div>
 		</div>
 		<div class="head-right">
-			<form method="post" action="#0" id="search">
-	            <input type="text" name="search" value="检索...">
+			
+			<form role="search" id="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+	            <input type="text" name="s" value="搜索...">
 	            <div id="submit-search"><i class="fa fa-search fa-fw"></i></div>
 	        </form>
+	        
+
 	        <a href="/admin">登录</a>
 	        <a href="http://vrvt.bnu.edu.cn/" target="_blank">旧版</a>
 	        <a href="/">中文</a>
