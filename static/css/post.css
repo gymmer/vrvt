@@ -1,0 +1,89 @@
+/**
+ * 文章、页面、归档
+ */
+
+
+/**
+ * 侧边栏
+ */
+
+aside,
+.site-main
+{
+    margin: 40px 0;
+
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+}
+
+aside
+{
+    float: left;
+
+    width: 200px;
+    min-height: 300px;
+
+    border-bottom: 5px solid #00234a;
+}
+
+.sidebar-title
+{
+    font-family: 'SimHei', '黑体', Helvetica, Arial, sans-serif;
+    font-size: 1.6em;
+
+    padding: 15px 0;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #004da1;
+}
+
+.sidebar-content
+{
+    padding: 10px 30px;
+}
+
+.sidebar-content li a
+{
+    font-family: 'Microsoft Yahei', '微软雅黑', 'SimHei', '黑体', Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 50px;
+
+    display: block;
+
+    height: 50px;
+
+    color: #555;
+}
+
+.sidebar-content li a:before
+{
+    font-family: FontAwesome;
+
+    margin-right: 20px;
+
+    content: '\f0da';
+}
+
+.sidebar-content li a:hover,
+.sidebar-content li a.highlight
+{
+    font-weight: bold;
+
+    text-decoration: none;
+
+    color: #004da1;
+}
+
+.sidebar-content li a:hover:before
+{
+    content: '\f0a4';
+}
+
+.site-main
+{
+    float: right;
+
+    width: 900px;
+}

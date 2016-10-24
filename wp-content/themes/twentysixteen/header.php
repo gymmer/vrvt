@@ -1,12 +1,6 @@
 <?php
 /**
- * The template for displaying the header
- *
- * Displays all of the head element and everything up until the "site-content" div.
- *
- * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
+ * 头部模板，包括：Logo、搜索框、功能区、导航栏
  */
 
 ?>
@@ -48,7 +42,6 @@
 	            <div id="submit-search"><i class="fa fa-search fa-fw"></i></div>
 	        </form>
 	        
-
 	        <a href="/admin">登录</a>
 	        <a href="http://vrvt.bnu.edu.cn/" target="_blank">旧版</a>
 	        <a href="/">中文</a>

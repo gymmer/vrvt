@@ -1,65 +1,55 @@
 <?php
 /**
- * The template for displaying archive pages
- *
- * Used to display archive-type pages if nothing more specific matches a query.
- * For example, puts together date-based pages if no date.php file exists.
- *
- * If you'd like to further customize these archive views, you may create a
- * new template file for each one. For example, tag.php (Tag archives),
- * category.php (Category archives), author.php (Author archives), etc.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
+ * 分类目录的模板
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="container">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-
+			<div>
+				<?php the_archive_title( '<h1>', '</h1>' ); ?>
+			</div>
+			
 			<?php
-			// Start the Loop.
-			while ( have_posts() ) : the_post();
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+			/*
+				显示该归档下所有文章的标题、日期
+			*/
+			// 开始循环
+			while ( have_posts() ) : the_post();?>
 
-			// End the loop.
+				<div>
+					<?php the_title( sprintf( '<span><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></span>' ); ?>
+
+					<?php echo the_time('Y-m-j'); ?>
+				</div>
+
+			<?php 
+			// 结束循环
 			endwhile;
 
-			// Previous/next page navigation.
+			// 上一页/下一页的导航
 			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentysixteen' ),
-				'next_text'          => __( 'Next page', 'twentysixteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
+				'prev_text'          => __( '上一页', 'twentysixteen' ),
+				'next_text'          => __( '下一页', 'twentysixteen' ),
+				'before_page_number' => '<span>' . __( 'Page', 'twentysixteen' ) . ' </span>',
 			) );
 
-		// If no content, include the "No posts found" template.
+		// 如果该目录没有内容，引入模板：template-parts/content-none
 		else :
 			get_template_part( 'template-parts/content', 'none' );
 
-		endif;
-		?>
+		endif; ?>
 
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
+		</main><!-- .site-main end-->
 
-<?php get_sidebar(); ?>
+		<?php get_sidebar(); ?>
+		<div class="clearfix"></div>
+
+	</div><!-- .container end-->
+
 <?php get_footer(); ?>
