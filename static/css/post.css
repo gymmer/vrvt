@@ -148,27 +148,7 @@ aside
     margin: 0 2px;
     background: #4591e4;
 }
-/* 文章、页面 */
-.article-time{
-    text-align: center;
-    position: relative;
-    top: -20px;
-}
-.post-thumbnail img{
-    width: 830px;
-    height: auto;
-    margin: 20px 0;
-}
-.entry-content{
-    color: #111;
-    font-size: 1.1em;
-    font-family: 'Microsoft Yahei', '微软雅黑', 'SimHei', '黑体', Helvetica, Arial, sans-serif;
-    line-height: 2em;
-}
-.entry-content p{
-    text-indent: 2em;
-    margin: 1em 0;
-}
+
 /* 文章底部的上一篇/下一篇 */
 .post-navigation{
 
@@ -207,4 +187,43 @@ aside
 .nav-previous a:hover,
 .nav-next a:hover{
     color: #072848;
+}
+/* 文章、页面 */
+.article-time{
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+.post-thumbnail img{
+    width: 830px;
+    height: auto;
+    margin: 20px 0;
+}
+.entry-content{
+    color: #111;
+    font-size: 1.1em;
+    font-family: 'Microsoft Yahei', '微软雅黑', 'SimHei', '黑体', Helvetica, Arial, sans-serif;
+    line-height: 2em;
+}
+.entry-content p{
+    text-indent: 2em;
+    margin: 1em 0;
+}
+.entry-content h1{
+    font-size: 1.3em;
+    margin: 40px 0 10px 0;
+    padding-bottom: 10px;
+    color: #c50000;
+    font-family: Georgia, "Microsoft Yahei", "微软雅黑", Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid #d8d1d1;
+}
+.entry-content .person{
+    float: left;
+    text-align: center;
+    margin-right: 30px;
+}
+.entry-content .person img{
+    margin: 10px 0;
+    width: 150px;
+    height: auto;
 }

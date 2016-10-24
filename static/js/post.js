@@ -39,7 +39,6 @@ jQuery(function($) {
         })
     }
 
-
     var currentSlug = getSlug(window.location.href);
 
     // 当前页是文章或分页
@@ -73,7 +72,7 @@ jQuery(function($) {
 
     // 侧边栏如果是一级菜单，则点击该菜单项，应链接到第一个子菜单
     $('#sidebar-sub-menu>ul>li:has(".sub-menu")').children('a')
-        .click(function(event) {
+        .click(function() {
             var url = $(this).siblings('.sub-menu').find('>li>a:eq(0)').attr("href");
             window.location.href = url;
             return false;
