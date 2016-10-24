@@ -43,20 +43,29 @@ jQuery(function($) {
 
     var currentSlug = getSlug(window.location.href);
 
-    // 当前页是文章
-    // 文章页总是以数字结尾的,即currentSlug可以转换为Number型
+    // 当前页是文章或分页
+    // 文章或分页总是以数字结尾的,即currentSlug可以转换为Number型
     if (Number(currentSlug)) {
-        // 文章页总是有<article>标签，其属性类似于：
-        // <article id="post-105" class="post-105 post stauts-publish category-news">
-        // 可以看出，该文章所属的分类目录，隐含在class属性中
-        // 接下来提取出分类目录的slug，即上例中的news
-        var className = $('article').attr('class').split(' ');
-        for (var i = 0; i < className.length; i++) {
-            if (className[i].indexOf("category") != -1) {
-                // 这时候，className[i] == 'category-news'
-                // 将currentSlug重新指向该文章所属的分类目录
-                currentSlug = className[i].split('-').pop();
-            }
+        if ($('article').size()>0){
+            // 文章页总是有<article>标签，其属性类似于：
+            // <article id="post-105" class="post-105 post stauts-publish category-news">
+            // 可以看出，该文章所属的分类目录，隐含在class属性中
+            // 接下来提取出分类目录的slug，即上例中的news
+            var className = $('article').attr('class').split(' ');
+            for (var i = 0; i < className.length; i++) {
+                if (className[i].indexOf("category") != -1) {
+                    // 这时候，className[i] == 'category-news'
+                    // 将currentSlug重新指向该文章所属的分类目录
+                    currentSlug = className[i].split('-').pop();
+                }
+            }            
+        }else{
+            // 分页的url类似于：
+            // http://localhost:8000/archives/category/news/page/2
+            // 可以看出，真正的slug是news
+            // 接下来提取slug
+            var temp = window.location.href.split('/');
+            currentSlug = temp[temp.length-3]
         }
     }
 

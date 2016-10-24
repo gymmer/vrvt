@@ -1,16 +1,11 @@
 /**
- * 文章、页面、归档
- */
-
-
-/**
  * 侧边栏
  */
 
 aside,
 .site-main
 {
-    margin: 40px 0;
+    margin: 50px 0;
 
     border: 1px solid #ddd;
     background-color: #f5f5f5;
@@ -71,8 +66,6 @@ aside
 {
     font-weight: bold;
 
-    text-decoration: none;
-
     color: #004da1;
 }
 
@@ -81,9 +74,77 @@ aside
     content: '\f0a4';
 }
 
+/**
+ * 文章、页面、归档
+ */
+
 .site-main
 {
     float: right;
 
-    width: 900px;
+    width: 830px;
+    padding: 30px 60px 40px 60px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.post-title
+{
+    color: #076295;
+    font-size: 1.7em;
+    text-align: center;
+    font-family: 'Microsoft Yahei', '微软雅黑', 'SimHei', '黑体', Helvetica, Arial, sans-serif;
+    padding: 0px 30px 30px 30px;
+    border-bottom: 3px solid #DCDCDC;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* 归档 */
+.archive-list {
+    list-style: circle;
+}
+.archive-list li{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px dotted #d0d0d0;
+}
+.archive-list a{
+    font-size: 1.1em;
+    color: #000;
+}
+.archive-list a:hover{
+    color: #004DA1;
+}
+.archive-list-date{
+    float: right;
+}
+/* 归档的分页 */
+.pagination{
+
+    margin-top: 60px;
+
+    background-color: #F5F5F5;
+}
+.pagination .screen-reader-text{
+    display: none;
+}
+.pagination .nav-links{
+    text-align: center;
+}
+.page-numbers{
+    padding: 8px 14px;
+    border: #ccdbe4 1px solid;
+    margin: 0 2px;
+    color: #666;
+}
+.current{
+    color: #fff;
+    font-weight: 700;
+    padding: 8px 14px;
+    margin: 0 2px;
+    background: #4591e4;
 }

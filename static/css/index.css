@@ -192,8 +192,6 @@
     font-size: 1.4em;
     font-weight: bold;
 
-    text-decoration: none;
-
     color: #004da1;
     background-image: url(../img/tabs_bg.jpg);
     background-repeat: no-repeat;
@@ -314,8 +312,6 @@
 
 .tab-panel-right a:hover
 {
-    text-decoration: none;
-
     color: #004da1;
 }
 
@@ -349,8 +345,6 @@ a#tab-more
 a#tab-more:hover
 {
     font-weight: bold;
-
-    text-decoration: none;
 
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .1);

@@ -155,8 +155,6 @@ header img
 
 .head-right a:hover
 {
-    text-decoration: none;
-
     color: #00234a;
 }
 
@@ -183,12 +181,6 @@ nav ul a
 
     color: #fff;
 }
-
-nav ul a:hover
-{
-    text-decoration: none;
-}
-
 
 /* 一级菜单 */
 
@@ -303,20 +295,18 @@ footer
 
 .foot-box > ul a
 {
-    -webkit-transition: color .2s, text-decoration .2s;
-       -moz-transition: color .2s, text-decoration .2s;
-        -ms-transition: color .2s, text-decoration .2s;
-         -o-transition: color .2s, text-decoration .2s;
-            transition: color .2s, text-decoration .2s;
+    -webkit-transition: color .2s;
+       -moz-transition: color .2s;
+        -ms-transition: color .2s;
+         -o-transition: color .2s;
+            transition: color .2s;
 
     color: #004da1;
 }
 
 .foot-box > ul a:hover
 {
-    text-decoration: underline;
-
-    color: #022f61;
+    color: #05192f;
 }
 
 
@@ -342,8 +332,6 @@ footer
 
 .foot-copy a:hover
 {
-    text-decoration: none;
-
     color: #aaa;
 }
 
