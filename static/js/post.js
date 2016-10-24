@@ -34,7 +34,6 @@ jQuery(function($) {
         $('#sidebar-sub-menu').find('a').each(function() {
 
             if (getSlug($(this).attr('href')) == slug) {
-                console.log($(this).attr('href') + "  " + slug);
                 $(this).addClass('highlight').siblings().removeClass('highlight');
             }
         })
@@ -71,4 +70,12 @@ jQuery(function($) {
 
     showSiblingMenuBySlug(currentSlug);
     highlighCurrentItemBySlug(currentSlug);
+
+    // 侧边栏如果是一级菜单，则点击该菜单项，应链接到第一个子菜单
+    $('#sidebar-sub-menu>ul>li:has(".sub-menu")').children('a')
+        .click(function(event) {
+            var url = $(this).siblings('.sub-menu').find('>li>a:eq(0)').attr("href");
+            window.location.href = url;
+            return false;
+        })
 })

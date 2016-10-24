@@ -14,11 +14,6 @@ get_header(); ?>
 			// 引入模板：template-parts/content-single
 			get_template_part( 'template-parts/content', 'single' );
 
-			// 不显示评论区
-			/*if ( comments_open() || get_comments_number() ) {
-				comments_template();
-			}*/
-
 			// 显示上一篇/下一篇文章的标题
 			if ( is_singular( 'attachment' ) ) {
 				// Parent post navigation.
@@ -27,10 +22,8 @@ get_header(); ?>
 				) );
 			} elseif ( is_singular( 'post' ) ) {
 				the_post_navigation( array(
-					'next_text' => '<span>' . __( '下一篇：', 'twentysixteen' ) . '</span> ' .
-						'<span>%title</span>',
-					'prev_text' => '<span>' . __( '上一篇：', 'twentysixteen' ) . '</span> ' .
-						'<span>%title</span>',
+					'next_text' => '%title',
+					'prev_text' => '%title',
 				) );
 			}
 

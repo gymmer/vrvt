@@ -75,7 +75,7 @@ aside
 }
 
 /**
- * 文章、页面、归档
+ * 归档、文章、页面
  */
 
 .site-main
@@ -147,4 +147,64 @@ aside
     padding: 8px 14px;
     margin: 0 2px;
     background: #4591e4;
+}
+/* 文章、页面 */
+.article-time{
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+.post-thumbnail img{
+    width: 830px;
+    height: auto;
+    margin: 20px 0;
+}
+.entry-content{
+    color: #111;
+    font-size: 1.1em;
+    font-family: 'Microsoft Yahei', '微软雅黑', 'SimHei', '黑体', Helvetica, Arial, sans-serif;
+    line-height: 2em;
+}
+.entry-content p{
+    text-indent: 2em;
+    margin: 1em 0;
+}
+/* 文章底部的上一篇/下一篇 */
+.post-navigation{
+
+    margin-top: 50px;
+    padding-top: 20px;
+    background-color: #F5F5F5;
+    border-top: 3px solid #DCDCDC;
+    position: relative;
+    height: 20px;
+}
+.screen-reader-text{
+    display: none;
+}
+
+.nav-previous{
+    position: absolute;
+    left: 0;
+}
+.nav-next{
+    position: absolute;
+    right: 0;
+}
+.nav-previous:before,
+.nav-next:after{
+    font-family: FontAwesome;    
+    color: #4585c3;
+}
+.nav-previous:before{
+    content: "\f0a5";
+    margin-right: 10px;
+}
+.nav-next:after{
+    content: "\f0a4";
+    margin-left: 10px;
+}
+.nav-previous a:hover,
+.nav-next a:hover{
+    color: #072848;
 }

@@ -34,9 +34,9 @@ get_header(); ?>
 
         <div id="index-tab">
             <div id="tab-title-container">
-                <a href="/category/news/"><i class="fa fa-newspaper-o"></i>新闻动态</a>
-                <a href="/category/notation/"><i class="fa fa-edit"></i>通知公告</a>
-                <a href="/category/conference/"><i class="fa fa-calendar-minus-o"></i></i>学术会议</a>  
+                <a href="/archives/category/news"><i class="fa fa-newspaper-o"></i>新闻动态</a>
+                <a href="/archives/category/notation/"><i class="fa fa-edit"></i>通知公告</a>
+                <a href="/archives/category/conference/"><i class="fa fa-calendar-minus-o"></i>学术会议</a>  
             </div>
 
             <?php function showPostInTab($cat_ID){
