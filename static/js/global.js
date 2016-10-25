@@ -1,6 +1,13 @@
 jQuery.noConflict();
 jQuery(function($) {
 
+    console.log("很荣幸能吸引你阅读我的源码！");
+    console.log("我是开发这个网站的程序员 :)");
+    console.log("搭建本站时，我还只是对前端稍懂的研二学生。");
+    console.log("望前辈、大牛、企图攻击本站的黑客们手下留情 :)");
+    console.log("如果兴趣，可联系我：");
+    console.log("高岩：gaoyan@mail.bnu.edu.cn");
+
     // 头部搜索的提交事件
     var searchInput = $('.search input[type="text"]');
     $('.submit-search').click(function(event) {

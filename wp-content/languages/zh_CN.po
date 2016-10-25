@@ -6354,7 +6354,7 @@ msgstr "登录以回复"
 
 #: wp-includes/comment-template.php:1665
 msgid "Leave a Comment"
-msgstr "发表评论"
+msgstr "留言"
 
 #: wp-includes/comment-template.php:1666
 msgid "Log in to leave a Comment"
@@ -6366,7 +6366,7 @@ msgstr "点击这里取消回复。"
 
 #: wp-includes/comment-template.php:1826 wp-includes/comment-template.php:2172
 msgid "Leave a Reply"
-msgstr "发表评论"
+msgstr "留言"
 
 #: wp-includes/comment-template.php:1827 wp-includes/comment-template.php:2173
 msgid "Leave a Reply to %s"
@@ -6414,7 +6414,7 @@ msgstr "取消回复"
 
 #: wp-includes/comment-template.php:2179
 msgid "Post Comment"
-msgstr "发表评论"
+msgstr "留言"
 
 #: wp-includes/comment.php:234
 msgid "Unapproved"

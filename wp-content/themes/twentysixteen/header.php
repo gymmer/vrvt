@@ -10,6 +10,7 @@
 	<meta charset="utf-8">
 	<meta name="description" content="北京师范大学虚拟现实与可视化技术研究所">
 	<meta name="keywords" content="北京师范大学，虚拟现实，可视化技术研究所，文化遗产保护">
+	<meta name="author" content="高岩 gaoyan@mail.bnu.edu.cn">
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>虚拟现实与可视化技术研究所</title>

@@ -469,7 +469,7 @@ aside
 }
 
 
-/* 联系我们页面中的地图 */
+/* 联系方式页面中的地图 */
 
 img.map
 {
@@ -495,4 +495,80 @@ img.map:hover
 
          -o-box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
         -ms-box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
+}
+
+/**
+ *  留言板
+ */
+
+.comment-form {
+    padding-top: 1.75em;
+}
+
+.comment-notes {
+    color: #686868;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    margin-bottom: 2.1538461538em;
+    padding-left: 5px;
+    font-style: italic;
+}
+.required {
+    color: red;
+    font-family: Merriweather, Georgia, serif;
+}
+
+.comment-form label {
+    color: #686868;
+    display: block;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    letter-spacing: 0.076923077em;
+    line-height: 1.6153846154;
+    margin-bottom: 0.5384615385em;
+    text-transform: uppercase;
+}
+
+#commentform input[type="text"], 
+#commentform input[type="email"], 
+#commentform input[type="url"], 
+#commentform textarea {
+    background: #f7f7f7;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    color: #686868;
+    padding: 0.625em 0.4375em;
+    width: 500px;
+    margin-left: 30px;
+}
+
+#commentform textarea {
+    color: #1a1a1a;
+    font-family: Merriweather, Georgia, serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75;
+    height: 150px;
+}
+
+#commentform input[type="submit"]:hover{
+    background: #007acc;
+}
+
+#commentform input[type="submit"], 
+#commentform input[type="submit"][disabled]:hover,
+#commentform input[type="submit"][disabled]:focus {
+    cursor: pointer;
+    background: #1a1a1a;
+    border: 0;
+    border-radius: 2px;
+    color: #fff;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.84375em 0.875em 0.78125em;
+    text-transform: uppercase;
 }

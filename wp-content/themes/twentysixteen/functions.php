@@ -420,6 +420,10 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
 
+/* =========================================================================================================
+                                           以下是我自定义的函数
+   ========================================================================================================*/
+   
 /*控制摘要字数*/
 function new_excerpt_length($length) {
 	return 36;

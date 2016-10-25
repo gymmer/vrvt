@@ -1,5 +1,7 @@
 <?php
 /**
+ * 没有对此文件做修改
+ * 
  * Custom Twenty Sixteen template tags
  *
  * Eventually, some of the functionality here could be replaced by core features.

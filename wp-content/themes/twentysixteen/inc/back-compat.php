@@ -1,5 +1,7 @@
 <?php
 /**
+ * 没有对此文件做修改
+ * 
  * Twenty Sixteen back compat functionality
  *
  * Prevents Twenty Sixteen from running on WordPress versions prior to 4.4,

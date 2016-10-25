@@ -1,5 +1,7 @@
 <?php
 /**
+ * 没有对此文件做修改
+ * 
  * Twenty Sixteen Customizer functionality
  *
  * @package WordPress
