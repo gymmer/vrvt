@@ -64,9 +64,9 @@ get_header(); ?>
 
 			// 上一页/下一页的导航
 			the_posts_pagination( array(
-				'prev_text'          => __( '上一页', 'twentysixteen' ),
-				'next_text'          => __( '下一页', 'twentysixteen' ),
-				'before_page_number' => '<span>' . __( '', 'twentysixteen' ) . ' </span>',
+				'prev_text'          => '上一页',
+				'next_text'          => '下一页',
+				'before_page_number' => '',
 			) );?>
 
 		<?php } // 结束外层判断，即if(have_posts()) ?>

@@ -3,7 +3,8 @@
  */
 
 aside,
-.site-main
+.site-main,
+.search-main
 {
     margin: 50px 0;
 
@@ -79,11 +80,9 @@ aside
  * 分类、文章、页面
  */
 
-.site-main
-{
-    float: right;
-
-    width: 830px;
+.site-main,
+.search-main
+{ 
     padding: 30px 60px 40px 60px;
 
     -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
@@ -94,57 +93,14 @@ aside
         -ms-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
 }
 
-.post-title
-{
-    font-family: 'Microsoft Yahei', '微软雅黑', 'SimHei', '黑体', Helvetica, Arial, sans-serif;
-    font-size: 1.7em;
-    font-weight: bold;
-
-    margin-bottom: 30px;
-    padding: 0 30px 30px 30px;
-
-    text-align: center;
-
-    color: #076295;
-    border-bottom: 3px solid #dcdcdc;
-}
-
-
-/* 文章的分类目录 */
-
-.article-list
-{
-    list-style: circle;
-}
-
-.article-list li
-{
-    line-height: 50px;
-
-    height: 50px;
-
-    border-bottom: 1px dotted #d0d0d0;
-}
-
-.article-list a
-{
-    font-size: 1.1em;
-
-    color: #000;
-}
-
-.article-list a:hover
-{
-    color: #004da1;
-}
-
-.article-list .date
+.site-main
 {
     float: right;
+
+    width: 830px;
 }
 
-
-/* 分类目录的分页 */
+/* 上一页/下一页 */
 
 .pagination
 {
@@ -153,7 +109,7 @@ aside
     background-color: #f5f5f5;
 }
 
-.pagination .screen-reader-text
+.screen-reader-text
 {
     display: none;
 }
@@ -184,7 +140,7 @@ aside
 }
 
 
-/* 文章底部的上一篇/下一篇 */
+/* 上一篇/下一篇 */
 
 .post-navigation
 {
@@ -196,11 +152,6 @@ aside
 
     border-top: 3px solid #dcdcdc;
     background-color: #f5f5f5;
-}
-
-.screen-reader-text
-{
-    display: none;
 }
 
 .nav-previous
@@ -246,7 +197,22 @@ aside
 
 /* 文章、页面 */
 
-.article-time
+.post-title
+{
+    font-family: 'Microsoft Yahei', '微软雅黑', 'SimHei', '黑体', Helvetica, Arial, sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+
+    margin-bottom: 30px;
+    padding: 0 30px 30px 30px;
+
+    text-align: center;
+
+    color: #076295;
+    border-bottom: 3px solid #dcdcdc;
+}
+
+.post-time
 {
     position: relative;
     top: -20px;
@@ -301,8 +267,41 @@ aside
     color: #c50000;
 }
 
+/* 新闻通知/学术活动的分类目录 */
 
-/* 分类目录/页面中的人物头像 */
+.article-list
+{
+    list-style: circle;
+}
+
+.article-list li
+{
+    line-height: 50px;
+
+    height: 50px;
+
+    border-bottom: 1px dotted #d0d0d0;
+}
+
+.article-list a
+{
+    font-size: 1.1em;
+
+    color: #000;
+}
+
+.article-list a:hover
+{
+    color: #004da1;
+}
+
+.article-list .date
+{
+    float: right;
+}
+
+
+/* 研究团队/人才培养的分类目录，及页面中的人物头像 */
 
 .person-head
 {
@@ -312,6 +311,10 @@ aside
     margin-right: 50px;
 
     transition: color .4s, background-color .4s;
+    -webkit-transition: color .4s, background-color .4s;
+    -moz-transition: color .4s, background-color .4s;
+    -o-transition: color .4s, background-color .4s;
+    -ms-transition: color .4s, background-color .4s;
 
     color: #222;
     background-color: #e0e0e0;

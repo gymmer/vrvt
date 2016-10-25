@@ -100,14 +100,19 @@ header img
     text-align: center;
 }
 
-#search
+.search
 {
     position: relative;
 
     margin-bottom: 12px;
+
+    width: 172px;
+
+    font-size: 14px;
+    line-height: normal;
 }
 
-#search input[type='text']
+.search input[type='text']
 {
     height: 25px;
 }
@@ -124,7 +129,7 @@ header img
     background-color: #e7f4ff;
 }
 
-#submit-search
+.submit-search
 {
     position: absolute;
     top: 5px;

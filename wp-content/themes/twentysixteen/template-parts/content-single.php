@@ -13,7 +13,7 @@
 		<?php the_title(); ?>
 	</div>
 
-	<div class="article-time"> 
+	<div class="post-time"> 
 		<?php the_time('Y-m-j'); ?> 
 	</div>
 

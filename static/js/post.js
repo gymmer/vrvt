@@ -77,4 +77,8 @@ jQuery(function($) {
             window.location.href = url;
             return false;
         })
+
+    // 个人简介不显示文章发布时间、上一篇/下一篇
+    $('#main').has('.person-info').find('.post-time').hide()
+        .end().find('.post-navigation').hide();
 })

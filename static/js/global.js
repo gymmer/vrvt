@@ -2,10 +2,10 @@ jQuery.noConflict();
 jQuery(function($) {
 
     // 头部搜索的提交事件
-    var searchInput = $('#search input[type="text"]');
-    $('#submit-search').click(function(event) {
+    var searchInput = $('.search input[type="text"]');
+    $('.submit-search').click(function(event) {
         if (!searchInput.val() || searchInput.val() == searchInput[0].defaultValue) return;
-        $('#search').submit();
+        $('.search').submit();
     });
     // 测试提交事件
     // $('#search').submit(function(event) {

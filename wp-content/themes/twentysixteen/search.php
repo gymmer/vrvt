@@ -1,53 +1,46 @@
 <?php
 /**
- * The template for displaying search results pages
- *
- * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
+ * 搜索页的模板
  */
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="container">
+	<main id="main" class="search-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+		<div class="post-title">
+				<?php echo '搜索结果：'. esc_html( get_search_query() ); ?>
+		</div>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentysixteen' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+		<div class="entry-content">
 
-			<?php
-			// Start the loop.
-			while ( have_posts() ) : the_post();
+			<?php 
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
+			if ( have_posts() ) : 
 
-			// End the loop.
-			endwhile;
+					while ( have_posts() ) : the_post();
+						// 引入模板：template-parts/content-searchyes
+						get_template_part( 'template-parts/content', 'searchyes' );
+					endwhile;
 
-			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentysixteen' ),
-				'next_text'          => __( 'Next page', 'twentysixteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
-			) );
+					// 上一页/下一页
+					 the_posts_pagination( array(
+						'prev_text'          => '上一页',
+						'next_text'          => '下一页',
+						'before_page_number' => '',
+					) );
 
-		// If no content, include the "No posts found" template.
-		else :
-			get_template_part( 'template-parts/content', 'none' );
+			// 如果没有搜索出结果
+			else :
+				// 引入模板：template-parts/content-searchno
+				get_template_part( 'template-parts/content', 'searchno' );
 
-		endif;
-		?>
+			endif; ?>
 
-		</main><!-- .site-main -->
-	</section><!-- .content-area -->
+		</div><!-- .entry-content end -->
+		
+	</main><!-- .search-main -->
 
-<?php get_sidebar(); ?>
+</div><!-- .container -->
+
 <?php get_footer(); ?>

@@ -15,11 +15,8 @@
 	<title>虚拟现实与可视化技术研究所</title>
 	<link rel="shortcut icon" href="/static/img/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css" >
-	<link rel="stylesheet" type="text/css" href="/static/css/jquery-ui.min.css" >
 	<link rel="stylesheet" type="text/css" href="/static/css/base.css">
-	<script src="/static/js/jquery.min.js"></script>
-	<script src="/static/js/jquery-ui.min.js"></script>
-	<script src="/static/js/base.js"></script>
+	
 	 <!--[if lt IE 9]>
         <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
         <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -40,10 +37,7 @@
 		</div>
 		<div class="head-right">
 			
-			<form role="search" id="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-	            <input type="text" name="s" value="搜索...">
-	            <div id="submit-search"><i class="fa fa-search fa-fw"></i></div>
-	        </form>
+	        <?php get_search_form(); ?>
 	        
 	        <a href="/admin">登录</a>
 	        <a href="http://vrvt.bnu.edu.cn/" target="_blank">旧版</a>
