@@ -1,5 +1,5 @@
 /**
- * CSS全局，包括头部header、导航栏nav、页脚footer、返回顶部go-to-top
+ * CSS全局，包括头部header、导航栏nav、页脚footer、返回顶部go-to-top、404页面
  */
 
 body
@@ -364,4 +364,14 @@ footer
 #go-to-top:hover
 {
     background-image: url(../img/up_hover.png);
+}
+
+/**
+ * 404 页面
+ */
+
+.error-404
+{
+    max-width: 100%;
+    height: auto;
 }

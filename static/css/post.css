@@ -82,9 +82,12 @@ aside
 
 .site-main,
 .search-main
-{ 
+{
     padding: 30px 60px 40px 60px;
 
+    background-image: url(../img/ding.png);
+    background-repeat: no-repeat;
+    background-position: top right;
     -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
        -moz-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
             box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
@@ -99,6 +102,7 @@ aside
 
     width: 830px;
 }
+
 
 /* 上一页/下一页 */
 
@@ -267,6 +271,85 @@ aside
     color: #c50000;
 }
 
+.entry-content ul
+{
+    margin: 0 30px;
+}
+
+.entry-content li
+{
+    line-height: 2.3em;
+
+    border-bottom: 1px dotted #ccc;
+}
+
+.entry-content li:before
+{
+    font-family: FontAwesome;
+    font-size: .8em;
+
+    margin-right: 1.5em;
+
+    content: '\f13d';
+}
+
+.entry-content table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    text-align: center;
+
+    border: 1px solid #ccc;
+}
+
+.entry-content table > thead tr
+{
+    font-weight: bold;
+    line-height: 3em;
+
+    color: #fff;
+    background-color: #4591e4;
+}
+
+.entry-content table > tbody tr:nth-child(odd)
+{
+    background-color: #fffdf1;
+}
+
+.entry-content table > tbody tr:nth-child(even)
+{
+    background-color: #f1f7ff;
+}
+
+.entry-content table > tbody tr:hover
+{
+    background-color: #fff1f1;
+}
+
+.entry-content .alignleft
+{
+    float: left;
+
+    margin: .375em 1.75em 1.75em 0;
+}
+
+.entry-content .alignright
+{
+    float: right;
+
+    margin: .375em 0 1.75em 1.75em;
+}
+
+.entry-content .aligncenter
+{
+    display: block;
+    clear: both;
+
+    margin: 0 auto 1.75em;
+}
+
+
 /* 新闻通知/学术活动的分类目录 */
 
 .article-list
@@ -310,11 +393,11 @@ aside
     margin-top: 10px;
     margin-right: 50px;
 
-    transition: color .4s, background-color .4s;
     -webkit-transition: color .4s, background-color .4s;
-    -moz-transition: color .4s, background-color .4s;
-    -o-transition: color .4s, background-color .4s;
-    -ms-transition: color .4s, background-color .4s;
+       -moz-transition: color .4s, background-color .4s;
+        -ms-transition: color .4s, background-color .4s;
+         -o-transition: color .4s, background-color .4s;
+            transition: color .4s, background-color .4s;
 
     color: #222;
     background-color: #e0e0e0;
@@ -383,4 +466,33 @@ aside
 .person-info h1:before
 {
     content: '';
+}
+
+
+/* 联系我们页面中的地图 */
+
+img.map
+{
+    -webkit-transition: box-shadow .2s;
+       -moz-transition: box-shadow .2s;
+        -ms-transition: box-shadow .2s;
+         -o-transition: box-shadow .2s;
+            transition: box-shadow .2s;
+
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+       -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+
+         -o-box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+        -ms-box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+}
+
+img.map:hover
+{
+    -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
+       -moz-box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
+            box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
+
+         -o-box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
+        -ms-box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
 }

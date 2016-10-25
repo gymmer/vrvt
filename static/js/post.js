@@ -1,6 +1,9 @@
 jQuery.noConflict();
 jQuery(function($) {
 
+    /**
+     * 侧边栏
+     */
     // 提取url最后一个斜杠的内容，称之为slug
     var getSlug = function(url) {
         var temp = url.split('/');
@@ -78,7 +81,28 @@ jQuery(function($) {
             return false;
         })
 
+    /**
+     * 个人简介
+     */
     // 个人简介不显示文章发布时间、上一篇/下一篇
     $('#main').has('.person-info').find('.post-time').hide()
         .end().find('.post-navigation').hide();
+
+    /**
+     * 百度地图API
+     */
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(116.331398,39.897445);
+    map.centerAndZoom(point,12);
+    // 创建地址解析器实例
+    var myGeo = new BMap.Geocoder();
+    // 将地址解析结果显示在地图上,并调整地图视野
+    myGeo.getPoint("北京市海淀区上地10街", function(point){
+        if (point) {
+            map.centerAndZoom(point, 16);
+            map.addOverlay(new BMap.Marker(point));
+        }else{
+            alert("您选择地址没有解析到结果!");
+        }
+    }, "北京市");
 })
