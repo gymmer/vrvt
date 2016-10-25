@@ -17,11 +17,10 @@
 	$maxRecentPostNum = 10;
 	
 	// 获取最近更新的文章 
-	$args = array(
+	$post_query = new WP_Query(array(
 		'category__in' => $article_array,
 		'showposts' => $maxRecentPostNum,
-	);
-	$post_query = new WP_Query($args);  
+	) );  
 	while ($post_query->have_posts()) : 
 		$post_query->the_post();   
 		$do_not_duplicate = $post->ID; ?>   

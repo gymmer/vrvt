@@ -25,18 +25,11 @@ get_header(); ?>
 			</article><!-- #post-## -->
 
 		<?php	
-			// 显示上一篇/下一篇文章的标题
-			if ( is_singular( 'attachment' ) ) {
-				// Parent post navigation.
-				the_post_navigation( array(
-					'prev_text' => _x( '<span class="meta-nav">Published in</span><span class="post-title">%title</span>', 'Parent post link', 'twentysixteen' ),
-				) );
-			} elseif ( is_singular( 'post' ) ) {
-				the_post_navigation( array(
-					'next_text' => '%title',
-					'prev_text' => '%title',
-				) );
-			}
+			// 显示上一篇/下一篇文章的标题			
+			the_post_navigation( array(
+				'next_text' => '%title',
+				'prev_text' => '%title',
+			) );
 
 		// 结束循环
 		endwhile; ?>

@@ -9,19 +9,35 @@ get_header(); ?>
         <div id="slider">
             <ul id="slider-img">
 
-                <?php $maxSlideImgNum = 10; $cats = get_categories(); ?>
-                <?php foreach ( $cats as $cat ) { ?>
-                    <?php query_posts( 'showposts='.strval($maxSlideImgNum).'&cat='.$cat->cat_ID );?>
-                    <?php while ( have_posts() ) { the_post(); ?>
-                        <?php if ( has_post_thumbnail() ) { ?>
-                            <li>
-                                <a href="<?php the_permalink(); ?>" rel="<?php the_title(); ?>" >
-                                    <?php the_post_thumbnail(); ?>
-                                </a>
-                            </li>
-                        <?php } ?>
-                    <?php } wp_reset_query(); ?>
-                <?php } ?>
+                <?php 
+                $maxSlideImgNum = 10;   // 最多显示滑动图片的数量
+                $article_array = array(5,6,9,10,11);    // 滑动图片指向文章的分类
+                $currSlideImgNum = 0;   // 已经显示的滑动图片数量
+
+                query_posts( array(
+                    'post_in'   => $article_array,
+                    'showposts' => -1,
+                ) );
+                while ( have_posts() )
+                { 
+                    the_post(); 
+                    if ( has_post_thumbnail() ) 
+                    { ?>
+                        <li>
+                            <a href="<?php the_permalink(); ?>" rel="<?php the_title(); ?>" >
+                                <?php the_post_thumbnail(); ?>
+                            </a>
+                        </li>
+                    <?php 
+                        $currSlideImgNum ++;
+                        if ($currSlideImgNum>=$maxSlideImgNum)
+                        { 
+                            break; 
+                        }
+                    } //结束 if ( has_post_thumbnail() )
+                } //结束while
+                wp_reset_query(); 
+            ?>
                 
             </ul>
             <div id="slider-btn">
@@ -39,9 +55,12 @@ get_header(); ?>
                 <a href="/archives/category/conference/"><i class="fa fa-calendar-minus-o"></i>学术会议</a>  
             </div>
 
-            <?php function showPostInTab($cat_ID){
-                $maxPostPerTab = 4;
-                query_posts( 'showposts='.strval($maxPostPerTab).'&cat='.strval($cat_ID));
+            <?php function showPostInTab($cat_ID)
+            {
+                query_posts(array(
+                    'cat'       => $cat_ID,
+                    'showposts' => 4,
+                ) );
                 while ( have_posts() ) 
                 { 
                     the_post();
@@ -64,9 +83,9 @@ get_header(); ?>
                             the_excerpt();
                         echo '</div>';
                     echo '</div>';
-                }
+                }  // 结束while
                 wp_reset_query();
-            }?>
+            }/* 结束funtion定义 */?>
             <div class="tab">
                 <?php showPostInTab(5) ?>
             </div>

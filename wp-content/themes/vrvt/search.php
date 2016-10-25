@@ -18,17 +18,17 @@ get_header(); ?>
 
 			if ( have_posts() ) : 
 
-					while ( have_posts() ) : the_post();
-						// 引入模板：template-parts/content-searchyes
-						get_template_part( 'template-parts/content', 'searchyes' );
-					endwhile;
+				while ( have_posts() ) : the_post();
+					// 引入模板：template-parts/content-searchyes
+					get_template_part( 'template-parts/content', 'searchyes' );
+				endwhile;
 
-					// 上一页/下一页
-					 the_posts_pagination( array(
-						'prev_text'          => '上一页',
-						'next_text'          => '下一页',
-						'before_page_number' => '',
-					) );
+				// 上一页/下一页
+				 the_posts_pagination( array(
+					'prev_text'          => '上一页',
+					'next_text'          => '下一页',
+					'before_page_number' => '',
+				) );
 
 			// 如果没有搜索出结果
 			else :
