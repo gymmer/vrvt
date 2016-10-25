@@ -17,6 +17,9 @@
 	<link rel="shortcut icon" href="/static/img/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css" >
 	<link rel="stylesheet" type="text/css" href="/static/css/base.css">
+
+	<script src="/static/js/jquery.min.js"></script>
+	<script src="/static/js/base.js"></script>
 	
 	 <!--[if lt IE 9]>
         <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>

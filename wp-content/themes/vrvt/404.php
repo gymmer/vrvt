@@ -1,6 +1,6 @@
 <?php
 /**
- * 404页面模板
+Template Name: 404 Not Found
  */
 
 get_header(); ?>

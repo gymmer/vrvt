@@ -87,9 +87,6 @@
 		</div> <!-- .foot-copy end -->
 	</footer>
 	<span id="go-to-top"></span>
-
-	<script src="/static/js/jquery.min.js"></script>
-	<script src="/static/js/base.js"></script>
 	
 	<?php wp_footer(); ?>
 </body>

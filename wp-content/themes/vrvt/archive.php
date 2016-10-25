@@ -3,6 +3,8 @@
  * 分类目录的模板
  */
 
+get_header(); 
+
 // 新闻通知/学术活动的ID
 $article_array = array(5,6,9,10,11);
 
@@ -10,11 +12,18 @@ $article_array = array(5,6,9,10,11);
 $person_array = array(7,8,12,13,15,16);
 
 // 获取当前所属分类
-$category = get_the_category(); 
-$catId = $category[0]->cat_ID;
-$catName = $category[0]->cat_name;
+$catId = get_query_var('cat');
+$catName = get_cat_name($catId);
+ 
+// 当前分类不属于上述两种，直接返回404页面
+if ( !in_array($catId, $article_array) &&  !in_array($catId, $person_array))
+{
+	get_template_part( '404' );
+	get_footer();
+	return;
+}
 
-get_header(); ?>
+?>
 
 	<div id="primary" class="container">
 		<main id="main" class="site-main" role="main">
