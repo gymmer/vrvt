@@ -8,7 +8,7 @@ Template Name: English
 get_header(); ?>
 
 <div id="primary" class="container">
-	<main id="main" class="wide-main" role="main">
+	<div id="main" class="wide-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<!-- 显示页面标题、内容-->
@@ -64,7 +64,7 @@ get_header(); ?>
 			</article><!-- #post-## -->
 
 		<?php endwhile; ?>
-	</main><!-- .wide-main end-->
+	</div><!-- .wide-main end-->
 
 </div><!-- .container end -->
 

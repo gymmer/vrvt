@@ -6,7 +6,7 @@
 get_header(); ?>
 
 <div id="primary" class="container">
-	<main id="main" class="wide-main" role="main">
+	<div id="main" class="wide-main" role="main">
 
 		<div class="post-title">
 				<?php echo '搜索结果：'. esc_html( get_search_query() ); ?>
@@ -39,7 +39,7 @@ get_header(); ?>
 
 		</div><!-- .entry-content end -->
 		
-	</main><!-- .wide-main -->
+	</div><!-- .wide-main -->
 
 </div><!-- .container -->
 

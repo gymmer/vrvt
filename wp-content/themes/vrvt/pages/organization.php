@@ -6,7 +6,7 @@ Template Name: 组织机构
 get_header(); ?>
 
 <div id="primary" class="container">
-	<main id="main" class="site-main" role="main">
+	<div id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<!-- 显示页面标题、内容-->
@@ -49,7 +49,7 @@ get_header(); ?>
 			</article><!-- #post-## -->
 
 		<?php endwhile; ?>
-	</main><!-- .site-main end-->
+	</div><!-- .site-main end-->
 
 	<?php get_sidebar(); ?>
 	<div class="clearfix"></div>
