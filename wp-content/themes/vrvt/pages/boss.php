@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: 研究所领导
+Template Name: 现任领导
 */
 
 get_header(); ?>

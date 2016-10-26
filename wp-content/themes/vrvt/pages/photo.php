@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: 照片墙
+Template Name: 院所风貌
 */
 
 get_header(); ?>

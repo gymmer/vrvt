@@ -16,8 +16,8 @@ get_header(); ?>
 				</div>
 				
 				<div class="entry-content">
-					
-					<h1>联系方式</h1>
+
+					<h1>Welcome!</h1>
 
 					<p><i class="fa fa-mortar-board fa-fw" style="margin-right: 3em;"></i>名称：北京师范大学虚拟现实与可视化技术研究所</p>
 
@@ -30,12 +30,6 @@ get_header(); ?>
 					<p><i class="fa fa-envelope fa-fw" style="margin-right: 3em;"></i>邮箱：<a href="mailto:wangxs@bnu.edu.cn">wangxs@bnu.edu.cn</a></p>
 
 					<p><i class="fa fa-laptop fa-fw" style="margin-right: 3em;"></i>主页：<a href="http://vrvt.bnu.edu.cn">http://vrvt.bnu.edu.cn</a></p>
-
-					<h1>找到我们</h1>
-
-					<a href="/static/html/baidumap.html" target="_blank"><img class="aligncenter map" src="/static/img/map-baidu.png" alt="Baidu Map" /></a>
-					
-					<a href="http://map.bnu.edu.cn/" target="_blank"><img class="aligncenter map" src="/static/img/map-bnu.png" alt="BNU Map" /></a>
 
 				</div><!-- .entry-content end -->
 			</article><!-- #post-## -->
