@@ -4,12 +4,42 @@
 
 aside,
 .site-main,
-.search-main
+.wide-main
 {
     margin: 50px 0;
 
     border: 1px solid #ddd;
     background-color: #f5f5f5;
+}
+
+.site-main,
+.wide-main
+{
+    padding: 30px 60px 40px 60px;
+
+    background-image: url(../img/ding.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
+       -moz-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
+
+         -o-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
+        -ms-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
+}
+
+/* 有侧边栏的内容区 */
+.site-main
+{
+    float: right;
+
+    width: 830px;
+}
+
+/* 无侧边栏的内容区 */
+.wide-main
+{
+    /*width: 100%;*/
 }
 
 aside
@@ -75,34 +105,9 @@ aside
     content: '\f0a4';
 }
 
-
 /**
- * 分类、文章、页面
+ * 分类目录
  */
-
-.site-main,
-.search-main
-{
-    padding: 30px 60px 40px 60px;
-
-    background-image: url(../img/ding.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
-       -moz-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
-            box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
-
-         -o-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
-        -ms-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
-}
-
-.site-main
-{
-    float: right;
-
-    width: 830px;
-}
-
 
 /* 上一页/下一页 */
 
@@ -198,8 +203,95 @@ aside
     color: #072848;
 }
 
+/* 新闻通知/学术活动的分类目录 */
 
-/* 文章、页面 */
+.article-list
+{
+    list-style: circle;
+}
+
+.article-list li
+{
+    line-height: 50px;
+
+    height: 50px;
+
+    border-bottom: 1px dotted #d0d0d0;
+}
+
+.article-list a
+{
+    font-size: 1.1em;
+
+    color: #000;
+}
+
+.article-list a:hover
+{
+    color: #004da1;
+}
+
+.article-list .date
+{
+    float: right;
+}
+
+
+/* 研究团队/人才培养的分类目录，及页面中的人物头像 */
+
+.person-head
+{
+    float: left;
+
+    margin: 18px;
+
+    -webkit-transition: color .4s, background-color .4s;
+       -moz-transition: color .4s, background-color .4s;
+        -ms-transition: color .4s, background-color .4s;
+         -o-transition: color .4s, background-color .4s;
+            transition: color .4s, background-color .4s;
+
+    color: #222;
+    background-color: #e0e0e0;
+}
+
+.person-head img
+{
+    width: 170px;
+    height: 200px;
+
+    opacity: 1;
+}
+
+.person-head div
+{
+    font-family: 'Microsoft Yahei', '微软雅黑', Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5em;
+
+    padding: 5px 0;
+
+    text-align: center;
+}
+
+.person-head:hover
+{
+    color: #fff;
+    background-color: #0068b7;
+}
+
+.person-head img:hover
+{
+    opacity: .8;
+    color: #fff;
+    background: rgba(0, 0, 0, .1);
+}
+
+/**
+ * 文章、页面
+ */
+
+/* 标题、时间、特色图片 */
 
 .post-title
 {
@@ -230,6 +322,8 @@ aside
     height: auto;
     margin: 20px 0;
 }
+
+/* 内容正文 */
 
 .entry-content
 {
@@ -349,106 +443,22 @@ aside
     margin: 0 auto 1.75em;
 }
 
-#tabs>ul
+#tabs > ul
 {
     margin: 10px;
 }
 
-#tabs>ul li
+#tabs > ul li
 {
     line-height: 2em;
+
     border-bottom: 0;
 }
 
-#tabs>ul li:before
+#tabs > ul li:before
 {
     content: '';
 }
-
-/* 新闻通知/学术活动的分类目录 */
-
-.article-list
-{
-    list-style: circle;
-}
-
-.article-list li
-{
-    line-height: 50px;
-
-    height: 50px;
-
-    border-bottom: 1px dotted #d0d0d0;
-}
-
-.article-list a
-{
-    font-size: 1.1em;
-
-    color: #000;
-}
-
-.article-list a:hover
-{
-    color: #004da1;
-}
-
-.article-list .date
-{
-    float: right;
-}
-
-
-/* 研究团队/人才培养的分类目录，及页面中的人物头像 */
-
-.person-head
-{
-    float: left;
-
-    margin: 18px;
-
-    -webkit-transition: color .4s, background-color .4s;
-       -moz-transition: color .4s, background-color .4s;
-        -ms-transition: color .4s, background-color .4s;
-         -o-transition: color .4s, background-color .4s;
-            transition: color .4s, background-color .4s;
-
-    color: #222;
-    background-color: #e0e0e0;
-}
-
-.person-head img
-{
-    width: 170px;
-    height: 200px;
-
-    opacity: 1;
-}
-
-.person-head div
-{
-    font-family: 'Microsoft Yahei', '微软雅黑', Helvetica, Arial, sans-serif;
-    font-size: 1.1em;
-    line-height: 1.5em;
-
-    padding: 5px 0;
-
-    text-align: center;
-}
-
-.person-head:hover
-{
-    color: #fff;
-    background-color: #0068b7;
-}
-
-.person-head img:hover
-{
-    opacity: .8;
-    color: #fff;
-    background: rgba(0, 0, 0, .1);
-}
-
 
 /* 文章中的个人简介 */
 
@@ -483,7 +493,9 @@ aside
 }
 
 
-/* 联系方式页面中的地图 */
+/**
+ * 联系方式页面中的地图
+ */
 
 img.map
 {
@@ -511,78 +523,121 @@ img.map:hover
         -ms-box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
 }
 
+
 /**
  *  留言板
  */
 
-.comment-form {
+.comment-form
+{
     padding-top: 1.75em;
 }
 
-.comment-notes {
-    color: #686868;
-    font-size: 0.9em;
+.comment-notes
+{
+    font-size: .9em;
+    font-style: italic;
     line-height: 1.6em;
+
     margin-bottom: 2.1538461538em;
     padding-left: 5px;
-    font-style: italic;
+
+    color: #686868;
 }
-.required {
-    color: red;
+
+.required
+{
     font-family: Merriweather, Georgia, serif;
+
+    color: red;
 }
 
-.comment-form label {
-    color: #686868;
-    display: block;
-    font-family: Montserrat, "Helvetica Neue", sans-serif;
+.comment-form label
+{
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
     font-size: 13px;
-    font-size: 0.8125rem;
-    letter-spacing: 0.076923077em;
+    font-size: .8125rem;
     line-height: 1.6153846154;
-    margin-bottom: 0.5384615385em;
+
+    display: block;
+
+    margin-bottom: .5384615385em;
+
+    letter-spacing: .076923077em;
     text-transform: uppercase;
+
+    color: #686868;
 }
 
-#commentform input[type="text"], 
-#commentform input[type="email"], 
-#commentform input[type="url"], 
-#commentform textarea {
-    background: #f7f7f7;
-    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-    border: 1px solid #d1d1d1;
-    border-radius: 2px;
-    color: #686868;
-    padding: 0.625em 0.4375em;
+#commentform input[type='text'],
+#commentform input[type='email'],
+#commentform input[type='url'],
+#commentform textarea
+{
     width: 500px;
     margin-left: 30px;
+    padding: .625em .4375em;
+
+    color: #686868;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    background: #f7f7f7;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
 
-#commentform textarea {
-    color: #1a1a1a;
+#commentform textarea
+{
     font-family: Merriweather, Georgia, serif;
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.75;
+
     height: 150px;
+
+    color: #1a1a1a;
 }
 
-#commentform input[type="submit"]:hover{
+#commentform input[type='submit']:hover
+{
     background: #007acc;
 }
 
-#commentform input[type="submit"], 
-#commentform input[type="submit"][disabled]:hover,
-#commentform input[type="submit"][disabled]:focus {
+#commentform input[type='submit'],
+#commentform input[type='submit'][disabled]:hover,
+#commentform input[type='submit'][disabled]:focus
+{
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+
+    padding: .84375em .875em .78125em;
+
     cursor: pointer;
-    background: #1a1a1a;
+    letter-spacing: .046875em;
+    text-transform: uppercase;
+
+    color: #fff;
     border: 0;
     border-radius: 2px;
-    color: #fff;
-    font-family: Montserrat, "Helvetica Neue", sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.046875em;
-    line-height: 1;
-    padding: 0.84375em 0.875em 0.78125em;
-    text-transform: uppercase;
+    background: #1a1a1a;
+}
+
+
+/*
+  英文English
+ */
+
+.contact-en i
+{
+    margin-right: 3em;
+}
+
+.contact-en p.name-en
+{
+    font-weight: bold;
+}
+
+.contact-en p.item-en
+{
+    margin-left: 4.3em;
 }
