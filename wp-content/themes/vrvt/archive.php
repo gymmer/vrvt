@@ -66,6 +66,7 @@ if ( !in_array($catId, $article_array) &&  !in_array($catId, $person_array))
 						</li>
 					<?php endwhile; ?>
 				</ul>
+				<div class="clearfix"></div>
 
 			<?php
 

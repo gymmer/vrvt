@@ -16,9 +16,11 @@
 	<title>虚拟现实与可视化技术研究所</title>
 	<link rel="shortcut icon" href="/static/img/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css" >
+	<link rel="stylesheet" type="text/css" href="/static/css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/base.css">
 
 	<script src="/static/js/jquery.min.js"></script>
+	<script src="/static/js/jquery-ui.min.js"></script>
 	<script src="/static/js/base.js"></script>
 	
 	 <!--[if lt IE 9]>

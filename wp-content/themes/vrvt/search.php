@@ -19,8 +19,8 @@ get_header(); ?>
 			if ( have_posts() ) : 
 
 				while ( have_posts() ) : the_post();
-					// 引入模板：template-parts/content-searchyes
-					get_template_part( 'template-parts/content', 'searchyes' );
+					// 引入模板：searchyes
+					get_template_part( 'searchyes' );
 				endwhile;
 
 				// 上一页/下一页
@@ -32,8 +32,8 @@ get_header(); ?>
 
 			// 如果没有搜索出结果
 			else :
-				// 引入模板：template-parts/content-searchno
-				get_template_part( 'template-parts/content', 'searchno' );
+				// 引入模板：searchno
+				get_template_part( 'searchno' );
 
 			endif; ?>
 
