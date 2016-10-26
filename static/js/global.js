@@ -77,22 +77,32 @@ jQuery(function($) {
             }
         })
     
-    // 返回顶部
-    // 弹性返回顶部，展现滚动的动画
-    $.fn.scrollTo = function(speed){
-        var targetOffset = $(this).offset().top;
-        $('html body').stop().animate({scrollTop:targetOffset}, speed);
-        return this;
-    }
-    var goToTop = $('#go-to-top');
-    goToTop.click(function(event) {
-        $('body').scrollTo(500);
-        return false;
-    });
-    // 自动隐藏放回顶部按钮
+    // 返回顶部  
     function getScrollTop() {
         return document.documentElement.scrollTop + document.body.scrollTop;
     }
+    function setScrollTop(value) 
+    { 
+        if (document.documentElement.scrollTop) 
+        { 
+            document.documentElement.scrollTop = value; 
+        } 
+        else 
+        { 
+            document.body.scrollTop = value; 
+        } 
+    } 
+    // 弹性返回顶部，展现滚动的动画
+    var goToTop = $('#go-to-top');
+    goToTop.click(function(event) {
+        var goTop = setInterval(scrollMove, 12); 
+        function scrollMove() 
+        { 
+            setScrollTop(getScrollTop() / 1.1); 
+            if (getScrollTop() < 1) clearInterval(goTop); 
+        } 
+    });
+    // 自动隐藏放回顶部按钮
     $(window).scroll(function(event) {
         getScrollTop()>0 ? goToTop.fadeIn('fast') : goToTop.fadeOut('fast');
     });
