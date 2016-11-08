@@ -26,7 +26,7 @@ if ( !in_array($catId, $article_array) &&  !in_array($catId, $person_array))
 ?>
 
 	<div id="primary" class="container">
-		<div id="main" class="site-main" role="main">
+		<main class="site-main" role="main">
 
 		<div class="post-title">
 			<?php echo $catName; ?>
@@ -45,9 +45,9 @@ if ( !in_array($catId, $article_array) &&  !in_array($catId, $person_array))
 							<a href="<?php the_permalink(); ?>">
 								<?php the_title()?>
 							</a>
-							<span class="date">
+							<time>
 								<?php the_time('Y-m-j'); ?>
-							</span>
+							</time>
 						</li>
 					<?php endwhile; ?>
 				</ul>
@@ -81,7 +81,7 @@ if ( !in_array($catId, $article_array) &&  !in_array($catId, $person_array))
 
 		<?php } // 结束外层判断，即if(have_posts()) ?>
 
-		</div><!-- .site-main end-->
+		</main><!-- .site-main end-->
 
 		<?php get_sidebar(); ?>
 		<div class="clearfix"></div>

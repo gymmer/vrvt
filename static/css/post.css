@@ -4,146 +4,118 @@
 
 aside,
 .site-main,
-.wide-main
-{
+.wide-main {
     margin: 50px 0;
-
     border: 1px solid #ddd;
     background-color: #f5f5f5;
 }
 
 .site-main,
-.wide-main
-{
+.wide-main {
     padding: 30px 60px 40px 60px;
-
     background-image: url(../img/ding.png);
     background-repeat: no-repeat;
     background-position: top right;
     -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
-       -moz-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
-            box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
-
-         -o-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
-        -ms-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
+    -moz-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
+    -o-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
+    -ms-box-shadow: 3px 3px 15px rgba(0, 0, 0, .15);
 }
 
-/* 有侧边栏的内容区 */
-.site-main
-{
-    float: right;
 
+/* 有侧边栏的内容区 */
+
+.site-main {
+    float: right;
     width: 830px;
 }
 
+
 /* 无侧边栏的内容区 */
-.wide-main
-{
+
+.wide-main {
     /*width: 100%;*/
 }
 
-aside
-{
+/* 侧边栏 */
+aside {
     float: left;
-
     width: 200px;
     min-height: 300px;
-
     border-bottom: 5px solid #00234a;
 }
 
-.sidebar-title
-{
+.sidebar-title {
     font-family: 'SimHei', '黑体', Helvetica, Arial, sans-serif;
     font-size: 1.6em;
-
     padding: 15px 0;
-
     text-align: center;
-
     color: #fff;
     background-color: #004da1;
 }
 
-.sidebar-content
-{
+.sidebar-content {
     padding: 10px 30px;
 }
 
-.sidebar-content li a
-{
+.sidebar-content li a {
     font-family: 'Microsoft Yahei', '微软雅黑', 'SimHei', '黑体', Helvetica, Arial, sans-serif;
     font-size: 1.2em;
     line-height: 50px;
-
     display: block;
-
     height: 50px;
-
     color: #555;
 }
 
-.sidebar-content li a:before
-{
+.sidebar-content li a:before {
     font-family: FontAwesome;
-
     margin-right: 20px;
-
     content: '\f0da';
 }
 
 .sidebar-content li a:hover,
-.sidebar-content li a.highlight
-{
+.sidebar-content li a.highlight {
     font-weight: bold;
-
     color: #004da1;
 }
 
-.sidebar-content li a:hover:before
-{
+.sidebar-content li a:hover:before {
     content: '\f0a4';
 }
+
 
 /**
  * 分类目录
  */
 
+
 /* 上一页/下一页 */
 
-.pagination
-{
+.pagination {
     margin-top: 60px;
-
     background-color: #f5f5f5;
 }
 
-.screen-reader-text
-{
+.screen-reader-text {
     display: none;
 }
 
-.pagination .nav-links
-{
+.pagination .nav-links {
     text-align: center;
 }
 
-.page-numbers
-{
+.page-numbers {
     margin: 0 2px;
     padding: 8px 14px;
-
     color: #666;
     border: #ccdbe4 1px solid;
 }
 
-.current
-{
+.current {
     font-weight: 700;
-
     margin: 0 2px;
     padding: 8px 14px;
-
     color: #fff;
     background: #4591e4;
 }
@@ -151,344 +123,270 @@ aside
 
 /* 上一篇/下一篇 */
 
-.post-navigation
-{
+.post-navigation {
     position: relative;
-
     height: 20px;
     margin-top: 50px;
     padding-top: 20px;
-
     border-top: 3px solid #dcdcdc;
     background-color: #f5f5f5;
 }
 
-.nav-previous
-{
+.nav-previous {
     position: absolute;
     left: 0;
 }
 
-.nav-next
-{
+.nav-next {
     position: absolute;
     right: 0;
 }
 
 .nav-previous:before,
-.nav-next:after
-{
+.nav-next:after {
     font-family: FontAwesome;
-
     color: #4585c3;
 }
 
-.nav-previous:before
-{
+.nav-previous:before {
     margin-right: 10px;
-
     content: '\f0a5';
 }
 
-.nav-next:after
-{
+.nav-next:after {
     margin-left: 10px;
-
     content: '\f0a4';
 }
 
 .nav-previous a:hover,
-.nav-next a:hover
-{
+.nav-next a:hover {
     color: #072848;
 }
 
+
 /* 新闻通知/学术活动的分类目录 */
 
-.article-list
-{
+.article-list {
     list-style: circle;
 }
 
-.article-list li
-{
+.article-list li {
     line-height: 50px;
-
     height: 50px;
-
     border-bottom: 1px dotted #d0d0d0;
 }
 
-.article-list a
-{
+.article-list a {
     font-size: 1.1em;
-
     color: #000;
 }
 
-.article-list a:hover
-{
+.article-list a:hover {
     color: #004da1;
 }
 
-.article-list .date
-{
+.article-list time {
     float: right;
 }
 
 
 /* 研究团队/人才培养的分类目录，及页面中的人物头像 */
 
-.person-head
-{
+.person-head {
     float: left;
-
     margin: 18px;
-
     -webkit-transition: color .4s, background-color .4s;
-       -moz-transition: color .4s, background-color .4s;
-        -ms-transition: color .4s, background-color .4s;
-         -o-transition: color .4s, background-color .4s;
-            transition: color .4s, background-color .4s;
-
+    -moz-transition: color .4s, background-color .4s;
+    -ms-transition: color .4s, background-color .4s;
+    -o-transition: color .4s, background-color .4s;
+    transition: color .4s, background-color .4s;
     color: #222;
     background-color: #e0e0e0;
 }
 
-.person-head img
-{
+.person-head img {
     width: 170px;
     height: 200px;
-
     opacity: 1;
 }
 
-.person-head div
-{
+.person-head div {
     font-family: 'Microsoft Yahei', '微软雅黑', Helvetica, Arial, sans-serif;
     font-size: 1.1em;
     line-height: 1.5em;
-
     padding: 5px 0;
-
     text-align: center;
 }
 
-.person-head:hover
-{
+.person-head:hover {
     color: #fff;
     background-color: #0068b7;
 }
 
-.person-head img:hover
-{
+.person-head img:hover {
     opacity: .8;
     color: #fff;
     background: rgba(0, 0, 0, .1);
 }
 
+
 /**
  * 文章、页面
  */
 
+
 /* 标题、时间、特色图片 */
 
-.post-title
-{
+.post-title {
     font-family: 'Microsoft Yahei', '微软雅黑', 'SimHei', '黑体', Helvetica, Arial, sans-serif;
     font-size: 1.7em;
     font-weight: bold;
-
     margin-bottom: 30px;
     padding: 0 30px 30px 30px;
-
     text-align: center;
-
     color: #076295;
     border-bottom: 3px solid #dcdcdc;
 }
 
-.post-time
-{
+.post-time {
     position: relative;
     top: -20px;
-
+    display: block;
     text-align: center;
 }
 
-.post-thumbnail img
-{
+.post-thumbnail img {
     width: 830px;
     height: auto;
     margin: 20px 0;
 }
 
+
 /* 内容正文 */
 
-.entry-content
-{
+.entry-content {
     font-family: 'Microsoft Yahei', '微软雅黑', 'SimHei', '黑体', Helvetica, Arial, sans-serif;
     font-size: 1.1em;
     line-height: 2em;
-
     color: #111;
 }
 
-.entry-content p
-{
+.entry-content p {
     margin: 1em 0;
-
     text-indent: 2em;
 }
 
-.entry-content h1
-{
+.entry-content h1 {
     font-family: Georgia, 'Microsoft Yahei', '微软雅黑', Helvetica, Arial, sans-serif;
     font-size: 1.3em;
-
     margin: 40px 0 10px 0;
     padding-bottom: 10px;
-
     color: #c50000;
     border-bottom: 1px solid #d8d1d1;
 }
 
-.entry-content h1:before
-{
+.entry-content h1:before {
     font-family: FontAwesome;
     font-size: .8em;
-
     margin-right: 1em;
-
     content: '\f192';
-
     color: #c50000;
 }
 
-.entry-content ul
-{
+.entry-content ul {
     margin: 0 30px;
 }
 
-.entry-content li
-{
+.entry-content li {
     line-height: 3em;
-
     border-bottom: 1px dotted #ccc;
 }
 
-.entry-content li:before
-{
+.entry-content li:before {
     font-family: FontAwesome;
     font-size: .8em;
-
     margin-right: 1.5em;
-
     content: '\f13d';
 }
 
-.entry-content table
-{
+.entry-content table {
     border-spacing: 0;
     border-collapse: collapse;
-
     text-align: center;
-
     border: 1px solid #ccc;
 }
 
-.entry-content table > thead tr
-{
+.entry-content table > thead tr {
     font-weight: bold;
     line-height: 3em;
-
     color: #fff;
     background-color: #4591e4;
 }
 
-.entry-content table > tbody tr:nth-child(odd)
-{
+.entry-content table > tbody tr:nth-child(odd) {
     background-color: #fffdf1;
 }
 
-.entry-content table > tbody tr:nth-child(even)
-{
+.entry-content table > tbody tr:nth-child(even) {
     background-color: #f1f7ff;
 }
 
-.entry-content table > tbody tr:hover
-{
+.entry-content table > tbody tr:hover {
     background-color: #fff1f1;
 }
 
-.entry-content .alignleft
-{
+.entry-content .alignleft {
     float: left;
-
     margin: .375em 1.75em 1.75em 0;
 }
 
-.entry-content .alignright
-{
+.entry-content .alignright {
     float: right;
-
     margin: .375em 0 1.75em 1.75em;
 }
 
-.entry-content .aligncenter
-{
+.entry-content .aligncenter {
     display: block;
     clear: both;
-
     margin: 0 auto 1.75em;
 }
 
-#tabs > ul
-{
+#tabs > ul {
     margin: 10px;
 }
 
-#tabs > ul li
-{
+#tabs > ul li {
     line-height: 2em;
-
     border-bottom: 0;
 }
 
-#tabs > ul li:before
-{
+#tabs > ul li:before {
     content: '';
 }
 
+
 /* 文章中的个人简介 */
 
-.person-info img
-{
+.person-info img {
     float: right;
-
     width: 170px;
     height: 200px;
     padding-left: 30px;
-
     background-color: #f5f5f5;
 }
 
-.person-info h1
-{
+.person-info h1 {
     line-height: 50px;
-
     height: 50px;
     margin: 30px 0;
     padding: 0 20px;
-
     color: #003264;
     border: none;
     border-left: 7px solid #326ba4;
     background-color: #eee;
 }
 
-.person-info h1:before
-{
+.person-info h1:before {
     content: '';
 }
 
@@ -497,30 +395,25 @@ aside
  * 联系方式页面中的地图
  */
 
-img.map
-{
+img.map {
     -webkit-transition: box-shadow .2s;
-       -moz-transition: box-shadow .2s;
-        -ms-transition: box-shadow .2s;
-         -o-transition: box-shadow .2s;
-            transition: box-shadow .2s;
-
+    -moz-transition: box-shadow .2s;
+    -ms-transition: box-shadow .2s;
+    -o-transition: box-shadow .2s;
+    transition: box-shadow .2s;
     -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
-       -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
-
-         -o-box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
-        -ms-box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+    -o-box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+    -ms-box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
 }
 
-img.map:hover
-{
+img.map:hover {
     -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
-       -moz-box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
-            box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
-
-         -o-box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
-        -ms-box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
+    -o-box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
+    -ms-box-shadow: 6px 6px 20px rgba(0, 0, 0, .4);
 }
 
 
@@ -528,56 +421,43 @@ img.map:hover
  *  留言板
  */
 
-.comment-form
-{
+.comment-form {
     padding-top: 1.75em;
 }
 
-.comment-notes
-{
+.comment-notes {
     font-size: .9em;
     font-style: italic;
     line-height: 1.6em;
-
     margin-bottom: 2.1538461538em;
     padding-left: 5px;
-
     color: #686868;
 }
 
-.required
-{
+.required {
     font-family: Merriweather, Georgia, serif;
-
     color: red;
 }
 
-.comment-form label
-{
+.comment-form label {
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
     font-size: 13px;
     font-size: .8125rem;
     line-height: 1.6153846154;
-
     display: block;
-
     margin-bottom: .5384615385em;
-
     letter-spacing: .076923077em;
     text-transform: uppercase;
-
     color: #686868;
 }
 
 #commentform input[type='text'],
 #commentform input[type='email'],
 #commentform input[type='url'],
-#commentform textarea
-{
+#commentform textarea {
     width: 500px;
     margin-left: 30px;
     padding: .625em .4375em;
-
     color: #686868;
     border: 1px solid #d1d1d1;
     border-radius: 2px;
@@ -585,37 +465,29 @@ img.map:hover
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
 
-#commentform textarea
-{
+#commentform textarea {
     font-family: Merriweather, Georgia, serif;
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.75;
-
     height: 150px;
-
     color: #1a1a1a;
 }
 
-#commentform input[type='submit']:hover
-{
+#commentform input[type='submit']:hover {
     background: #007acc;
 }
 
 #commentform input[type='submit'],
 #commentform input[type='submit'][disabled]:hover,
-#commentform input[type='submit'][disabled]:focus
-{
+#commentform input[type='submit'][disabled]:focus {
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
     font-weight: 700;
     line-height: 1;
-
     padding: .84375em .875em .78125em;
-
     cursor: pointer;
     letter-spacing: .046875em;
     text-transform: uppercase;
-
     color: #fff;
     border: 0;
     border-radius: 2px;
@@ -627,17 +499,14 @@ img.map:hover
   英文English
  */
 
-.contact-en i
-{
+.contact-en i {
     margin-right: 3em;
 }
 
-.contact-en p.name-en
-{
+.contact-en p.name-en {
     font-weight: bold;
 }
 
-.contact-en p.item-en
-{
+.contact-en p.item-en {
     margin-left: 4.3em;
 }

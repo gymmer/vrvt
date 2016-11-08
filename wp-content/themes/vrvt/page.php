@@ -6,7 +6,7 @@
 get_header(); ?>
 
 <div id="primary" class="container">
-	<div id="main" class="site-main" role="main">
+	<main class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<!-- 显示页面标题、内容-->
@@ -21,7 +21,7 @@ get_header(); ?>
 			</article><!-- #post-## -->
 			
 		<?php endwhile; ?>
-	</div><!-- .site-main end-->
+	</main><!-- .site-main end-->
 
 	<?php get_sidebar(); ?>
 	<div class="clearfix"></div>

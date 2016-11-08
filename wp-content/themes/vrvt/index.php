@@ -54,38 +54,6 @@ get_header(); ?>
                 <a href="/archives/category/notation/"><i class="fa fa-edit"></i>通知公告</a>
                 <a href="/archives/category/conference/"><i class="fa fa-calendar-minus-o"></i>学术会议</a>  
             </div>
-
-            <?php function showPostInTab($cat_ID)
-            {
-                query_posts(array(
-                    'cat'       => $cat_ID,
-                    'showposts' => 4,
-                ) );
-                while ( have_posts() ) 
-                { 
-                    the_post();
-                    echo '<div class="tab-panel">';
-                        echo '<div class="tab-panel-left">';
-                            echo '<a href="'; the_permalink(); echo '">'; 
-                                echo '<img src="'; echo catch_first_image(); echo '">';
-                            echo '</a>';
-                        echo '</div>';
-                        echo '<div class="tab-panel-right">';
-                            echo '<div class="year">';
-                                echo the_time('Y');
-                            echo '</div>';
-                            echo '<div class="date">';
-                                echo the_time('m'); echo '/'; echo the_time('j');
-                            echo '</div>';
-                            echo '<div class="clearfix"></div>';
-                            
-                            echo '<a class="title" href="';the_permalink(); echo '">'; the_title(); echo '</a>';
-                            the_excerpt();
-                        echo '</div>';
-                    echo '</div>';
-                }  // 结束while
-                wp_reset_query();
-            }/* 结束funtion定义 */?>
             <div class="tab">
                 <?php showPostInTab(5) ?>
             </div>

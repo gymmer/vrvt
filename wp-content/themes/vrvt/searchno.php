@@ -29,9 +29,9 @@
         	<a href="<?php the_permalink(); ?>">
         		<?php the_title(); ?>
         	</a>
-        	<span class="date">
+        	<time>
 				<?php the_time('Y-m-j'); ?>
-			</span>
+			</time>
         </li>
         
 	<?php endwhile;?>  

@@ -5,10 +5,6 @@
 ?>
 
 <aside>
-	<div class="sidebar-title" id="sidebar-pare-menu">
-		
-	</div>
-	<div class="sidebar-content" id="sidebar-sub-menu">
-		
-	</div>
+	<div class="sidebar-title" id="sidebar-pare-menu"></div>
+	<div class="sidebar-content" id="sidebar-sub-menu"></div>
 </aside>

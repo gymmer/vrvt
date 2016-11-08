@@ -465,3 +465,70 @@ if ( isset($initArray['theme_advanced_fonts'])){
    return $initArray;
 }
 add_filter('tiny_mce_before_init', 'conference_change_mce_options',999);
+
+/* 用于 pages文件夹下各页面模板 */
+function get_page_header($sidebar=true){
+	get_header();
+
+	echo '<div id="primary" class="container">';
+		if($sidebar) {echo '<main class="site-main" role="main">';}
+		else {echo '<main class="wide-main" role="main">';}
+			the_post();
+
+			// 显示页面标题、内容
+			echo '<article id="post-'; the_ID(); echo'"'; post_class(); echo '>';
+				echo '<div class="post-title">';
+					the_title();
+				echo '</div>';
+
+				echo '<div class="entry-content">';
+}
+
+function get_page_footer($sidebar=true){
+				echo '</div><!-- .entry-content end -->';
+
+			echo '</article><!-- #post-## -->';
+
+		echo '</main><!-- .site-main end-->';
+
+		if($sidebar){	
+			get_sidebar();
+			echo '<div class="clearfix"></div>';
+		}
+	echo '</div><!-- .container end -->';
+
+	get_footer();
+}
+
+/* 首页的悬停tab */
+function showPostInTab($cat_ID)
+{
+    query_posts(array(
+        'cat'       => $cat_ID,
+        'showposts' => 4,
+    ) );
+    while ( have_posts() ) 
+    { 
+        the_post();
+        echo '<div class="tab-panel">';
+            echo '<div class="tab-panel-left">';
+                echo '<a href="'; the_permalink(); echo '">'; 
+                    echo '<img src="'; echo catch_first_image(); echo '">';
+                echo '</a>';
+            echo '</div>';
+            echo '<div class="tab-panel-right">';
+                echo '<time class="year">';
+                    echo the_time('Y');
+                echo '</time>';
+                echo '<time class="date">';
+                    echo the_time('m'); echo '/'; echo the_time('j');
+                echo '</time>';
+                echo '<div class="clearfix"></div>';
+                
+                echo '<a class="title" href="';the_permalink(); echo '">'; the_title(); echo '</a>';
+                the_excerpt();
+            echo '</div>';
+        echo '</div>';
+    }
+    wp_reset_query();
+}

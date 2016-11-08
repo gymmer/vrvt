@@ -36,10 +36,10 @@ jQuery(function($) {
     // 一级菜单鼠标悬停
     $('#menu-primary>li').hover(
         function() {
-            $(this).find('ul.sub-menu').slideDown('fast');
+            $(this).find('ul.sub-menu').stop().slideDown('fast');
         },
         function() {
-            $(this).find('ul.sub-menu').slideUp('fast');
+            $(this).find('ul.sub-menu').stop().slideUp('fast');
         }
     )
 

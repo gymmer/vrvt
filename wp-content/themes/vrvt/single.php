@@ -6,7 +6,7 @@
 get_header(); ?>
 
 <div id="primary" class="container">
-	<div id="main" class="site-main" role="main">
+	<main class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<!-- 显示文章标题、日期、内容-->
@@ -15,9 +15,9 @@ get_header(); ?>
 					<?php the_title(); ?>
 				</div>
 
-				<div class="post-time"> 
+				<time class="post-time"> 
 					<?php the_time('Y-m-j'); ?> 
-				</div>
+				</time>
 
 				<div class="entry-content">
 					<?php the_content(); ?>
@@ -33,7 +33,7 @@ get_header(); ?>
 
 		// 结束循环
 		endwhile; ?>
-	</div><!-- .site-main end -->
+	</main><!-- .site-main end -->
 
 	<?php get_sidebar(); ?>
 	<div class="clearfix"></div>
